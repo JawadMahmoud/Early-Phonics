@@ -1,0 +1,177 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="285px" height="427px" viewBox="0 0 285 427">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="6.349999999999994" y1="338.35" x2="87.75" y2="338.35" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="47.83749999999999" y1="320.15" x2="85.2625" y2="320.15" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_3" gradientUnits="userSpaceOnUse" x1="145.5625" y1="327.1875" x2="164.6375" y2="281.3125" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_4" gradientUnits="userSpaceOnUse" x1="25.15" y1="214.75" x2="91.85" y2="214.75" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_5" gradientUnits="userSpaceOnUse" x1="56.55" y1="141.05" x2="84.05" y2="141.05" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_6" gradientUnits="userSpaceOnUse" x1="48.537499999999994" y1="177.6" x2="84.5625" y2="177.6" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_7" gradientUnits="userSpaceOnUse" x1="31.6375" y1="74.85" x2="91.8625" y2="74.85" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_8" gradientUnits="userSpaceOnUse" x1="-18" y1="99.7" x2="117" y2="99.7" spreadMethod="pad">
+<stop  offset="0.39215686274509803%" stop-color="#626262"/>
+
+<stop  offset="100%" stop-color="#C8C8C8"/>
+
+<stop  offset="100%" stop-color="#D6D1A0"/>
+</linearGradient>
+
+<g id="Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 46.3 326.2
+L 46.3 310.85
+Q 6.1 315.2 6.65 347.1 26.1 373.75 71.55 374.3 129.6 376 135.8 345 124.9 314.65 97.4 311.4
+L 97.4 328.65
+Q 68.65 340.1 46.3 326.2 Z"/>
+
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 46.3 310.85
+L 46.3 326.2
+Q 68.65 340.1 97.4 328.65
+L 97.4 311.4 97.4 296.05
+Q 72.05 307.85 46.3 296.05
+L 46.3 310.85 Z"/>
+
+<path fill="url(#Gradient_3)" stroke="none" d="
+M 97.4 296.05
+L 104.8 296.05 212.25 337.65
+Q 219.05 343 221.6 349.8 223.3 353.7 225.05 361.5 226.05 365.2 233.65 367.2 240.95 369.35 250.5 368.75 273.9 368 278.35 357.1 274.25 336.4 266.8 323.85 258.35 309.65 242.2 299.15
+L 131.25 257.2 109.4 229.55
+Q 68.65 252.3 31.2 229.55 28.2 250.95 28.6 262.4 29.15 278.35 35.7 288.5
+L 46.3 296.05
+Q 72.05 307.85 97.4 296.05 Z"/>
+
+<path fill="url(#Gradient_4)" stroke="none" d="
+M 92.35 182.25
+Q 70.3 195.05 49.1 182.25
+L 31.9 223.7
+Q 31.2 225.8 31.2 229.55 68.65 252.3 109.4 229.55
+L 92.35 182.25 Z"/>
+
+<path fill="url(#Gradient_5)" stroke="none" d="
+M 57.75 116.85
+L 56.6 161.3
+Q 73.2 171.9 84.1 161.3
+L 84.1 120.85
+Q 82.95 120.85 81.8 120.85
+L 81.7 120.85
+Q 67.95 120.85 57.75 116.85 Z"/>
+
+<path fill="url(#Gradient_6)" stroke="none" d="
+M 56.6 161.3
+L 49.1 182.25
+Q 70.3 195.05 92.35 182.25
+L 84.1 161.3
+Q 73.2 171.9 56.6 161.3 Z"/>
+
+<path fill="url(#Gradient_7)" stroke="none" d="
+M 48.3 66.05
+Q 49.55 70.8 54.65 74.35 50.05 75.45 47.65 78
+L 43.85 83.25
+Q 50.7 94.3 71.95 96 93.8 97.5 104.15 86.35 101.8 71.5 68.65 69.95
+L 61.55 56.1
+Q 57.1 50.15 47.95 56.1 47.25 62.9 48.3 66.05 Z"/>
+
+<path fill="url(#Gradient_8)" stroke="none" d="
+M 134.3 82.4
+Q 119.05 77.3 104.15 86.35 93.8 97.5 71.95 96 50.7 94.3 43.85 83.25 40.95 85.25 40.95 90.15 33 85.55 25.4 85.1 18.85 84.7 15.85 87.3 5.05 96.85 15 111.3 18.05 113.3 28.1 112.65 37.85 112 47.95 109.1 48.2 103.95 47.25 101.45 46.1 98.95 45.4 97.45 46.1 98.95 47.25 101.45 48.2 103.95 47.95 109.1 50.7 112.5 55.3 115.5 56.6 116.3 57.75 116.85 67.95 120.85 81.7 120.85
+L 81.8 120.85
+Q 82.85 120.5 84.1 120.4 77.4 107.1 89.25 103.35 77.4 107.1 84.1 120.4 84.3 120.4 84.5 120.4 96.55 137.55 106.95 129.4 115.15 123.1 111.4 113.4 108.15 104.7 100.55 102.3 119.4 107 138.65 102.3 149.05 87.5 134.3 82.4 Z"/>
+</g>
+
+<path id="Layer0_0_1_STROKES" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 84.1 120.4
+Q 84.3 120.4 84.5 120.4 96.55 137.55 106.95 129.4 115.15 123.1 111.4 113.4 108.15 104.7 100.55 102.3 119.4 107 138.65 102.3 149.05 87.5 134.3 82.4 119.05 77.3 104.15 86.35 93.8 97.5 71.95 96 50.7 94.3 43.85 83.25 40.95 85.25 40.95 90.15 33 85.55 25.4 85.1 18.85 84.7 15.85 87.3 5.05 96.85 15 111.3 18.05 113.3 28.1 112.65 37.85 112 47.95 109.1 48.2 103.95 47.25 101.45 46.1 98.95 45.4 97.45
+M 104.15 86.35
+Q 101.8 71.5 68.65 69.95
+L 61.55 56.1
+Q 57.1 50.15 47.95 56.1 47.25 62.9 48.3 66.05 49.55 70.8 54.65 74.35 50.05 75.45 47.65 78
+L 43.85 83.25
+M 47.95 109.1
+Q 50.7 112.5 55.3 115.5 56.6 116.3 57.75 116.85 67.95 120.85 81.7 120.85
+L 81.8 120.85
+Q 82.85 120.5 84.1 120.4 77.4 107.1 89.25 103.35
+M 56.6 161.3
+L 49.1 182.25
+Q 70.3 195.05 92.35 182.25
+L 84.1 161.3
+Q 73.2 171.9 56.6 161.3
+L 57.75 116.85
+M 84.1 120.4
+L 84.1 120.85 84.1 161.3
+M 97.4 296.05
+L 104.8 296.05 212.25 337.65
+Q 219.05 343 221.6 349.8 223.3 353.7 225.05 361.5 226.05 365.2 233.65 367.2 240.95 369.35 250.5 368.75 273.9 368 278.35 357.1 274.25 336.4 266.8 323.85 258.35 309.65 242.2 299.15
+L 131.25 257.2 109.4 229.55
+Q 68.65 252.3 31.2 229.55 28.2 250.95 28.6 262.4 29.15 278.35 35.7 288.5
+L 46.3 296.05
+Q 72.05 307.85 97.4 296.05
+L 97.4 311.4
+Q 124.9 314.65 135.8 345 129.6 376 71.55 374.3 26.1 373.75 6.65 347.1 6.1 315.2 46.3 310.85
+L 46.3 296.05
+M 49.1 182.25
+L 31.9 223.7
+Q 31.2 225.8 31.2 229.55
+M 46.3 310.85
+L 46.3 326.2
+Q 68.65 340.1 97.4 328.65
+L 97.4 311.4
+M 109.4 229.55
+L 92.35 182.25"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_FILL"/>
+
+<use xlink:href="#Layer0_0_1_STROKES"/>
+</g>
+</svg>

@@ -1,0 +1,625 @@
+/** Doorway Online learning activities.
+  * General style sheet
+  * Copyright (c) Roger Spooner 2017
+  * Based on features of Flash-based web site doorwayonline.org.uk
+  */
+
+/* index.css*/
+
+body {
+    padding: 25px;
+}
+
+.img-index {
+    width: 12vw; /* You can set the dimensions to whatever you want */
+    height: 12vw;
+    object-fit: contain;
+}
+
+/* style.css*/
+body {
+    background-color: #fff;
+}
+
+/* settings.css */
+.switch_num_div, .switch_time_div {
+    display: none;
+}
+
+/* selection.css*/
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.word-button {
+
+    height: 3vw;
+    background-color: whitesmoke;
+    font-size: 1.75vw;
+    border: 2px solid darkgrey;
+    margin-bottom: 3px;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav-link.selection_pill_tabs.active {
+    color: black;
+    background-color: chartreuse;
+    border: 0.1em solid green;
+}
+
+.nav-link.selection_pill_tabs.active:hover {
+    box-shadow: 0 0 0 0.2em gold;
+}
+
+.nav-link.selection_pill_tabs {
+    color: black;
+    border: 0.1em solid cornflowerblue;
+    border-radius: 0.5em;
+    margin: 0.1em;
+}
+
+.cancel_cross {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+/* game.css*/
+#spell-text {
+    font-size: 2em;
+    padding-top: 3em;
+}
+
+#text-place {
+    padding-top: 5em;
+}
+
+button.keyboard-key {
+    margin-right: 0.2em;
+    height: 1.9em;
+    font-size: 2vw;
+    width: 3em;
+}
+
+button.keyboard-key.res {
+    height: 2.5em;
+    font-size: 2.5vw;
+}
+
+button.keyboard-key:hover {
+    box-shadow: 0 0 0 0.2em gold;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 80px;
+    margin-left: -125px;
+    margin-top: -40px;
+    z-index: 100000;
+    background: white;
+    border-radius: 10px;
+    font-size: 40px;
+    padding-top:  7px;
+    box-sizing: border-box;
+    border: solid 5px darkorange;
+    display: none;
+}
+
+/* Dynamically adjusts the size of the keyboard's buttons. */
+@media (min-width: 320px) {
+    button.keyboard-key {
+        padding: 0px 5px;
+    }
+}
+
+@media (min-width: 335px) {
+    button.keyboard-key {
+        padding: 0px 8px;
+    }
+}
+
+@media (min-width: 375px) {
+    button.keyboard-key {
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width: 520px) {
+    button.keyboard-key {
+        padding: 0px 15px;
+    }
+}
+
+@media (min-width: 700px) {
+    button.keyboard-key {
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    button.keyboard-key {
+        padding: 0px 25px;
+    }
+}
+
+@media (min-width: 930px) {
+    button.keyboard-key {
+        padding: 0px 30px;
+    }
+}
+
+#spell-word {
+    width: 3em;
+    height: 3em;
+}
+
+img#check-button {
+    width: 4em;
+    height: 3em;
+}
+
+#keyboard {
+    position: fixed;
+    bottom: 1em;
+    left: 15.25%;
+}
+
+#keyboard_res {
+    position: fixed;
+    bottom: 1em;
+    left: 30.25%;
+}
+
+.twelve.columns {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+div.doorway_application, div.doorway_fullscreen_div {
+    font-family: "Jotter Primary", sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+/* Full Screen area */
+div.doorway_fullscreen_div:-webkit-full-screen, div.doorway_fullscreen_div:-moz-full-screen, div.doorway_fullscreen_div:-ms-fullscreen, div.doorway_fullscreen_div:fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.doorway_aspect_outer_div {
+    width: 100%;
+    height: 100%;
+    max-width: 177.78vh;
+    max-height: 56.25vw;
+    position: relative;
+}
+
+div.doorway_aspect_div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    /* font-size should be changed by JavaScript to be relative to width,
+       but vw (viewport width) will do so long as the window is not too wide.
+       There seems to be no font-size measure that is relative to the parent
+       container size. Font sizes are relative to the parent's font size.
+     */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Paragraphs in Doorway are not prose. Simplify layout */
+p, h1, h2, h3, h4 {
+    margin: 0.1em;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Jotter Primary";
+    src: url("../resources/jotter-primary.ttf");
+}
+
+/* Main (brief) instructions to the end user */
+#dwInstructionHeader {
+    text-align: center;
+    font-size: 200%;
+}
+
+.doorway_logo {
+    position: absolute;
+    width: 2em;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.doorway_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.doorway_welcome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* div.welcome_image  is sized in each activity */
+
+div.welcome_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.version_number {
+    color: darkgray;
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    font-size: 60%;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+
+.sub_title {
+    padding: 1em;
+}
+
+.copyright_message {
+    padding: 0em;
+}
+
+.activity_description {
+    font-size: 60%;
+    margin-top: 0;
+}
+
+/** Teacher navigation features that should not detract from the game play */
+
+#dwNavigationHeader {
+    text-align: left;
+    color: #bbbbbb;
+    position: absolute;
+    height: 1.2em;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/** Pop-up to tell the user they've done something right */
+.well_done_message {
+    position: absolute;
+    /* height: 15%; */
+    left: 40%;
+    top: 45%;
+    font-size: 150%;
+    background-color: white;
+    vertical-align: middle;
+    border: 0.2em solid orange;
+    border-radius: 0.5em;
+}
+
+.well_done_message p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#dwWellDoneNextButton {
+    left: 40em;
+    top: 23em;
+    width: 7em;
+    height: 3.5em;
+    position: absolute;
+    border-radius: 25%;
+}
+
+#dwWellDoneNextButton img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hidden_panel, div#dwMainActivityArea div.hidden_panel {
+    display: none;
+}
+
+.shown_panel {
+    display: inline-block;
+}
+
+button {
+    font-size: 100%;
+}
+
+.teacher_button {
+    border: 0.1em solid white;
+    display: inline-block;
+    padding: 0.1em;
+    margin: 0.1em;
+    height: 2em;
+    width: 3em;
+    border-radius: 0.5em;
+}
+
+.teacher_button img {
+    width: 100%;
+    height: 100%;
+}
+
+div.user_options {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+div.darkened_panel {
+    background: white;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.01;
+    top: 0;
+}
+
+/*div.user_options .user_options_form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+*/
+
+div.user_options div.options_group {
+    border: 0.1em solid CornflowerBlue;
+    margin: 1.5em;
+    padding: 0.2em;
+    /*position: relative;*/
+    background-color: white;
+    text-align: left;
+}
+
+/*noinspection CssOptimizeSimilarProperties*/
+div.user_options h3.options_group_title {
+    position: relative;
+    top: -1em;
+    left: 1em;
+    text-align: left;
+    background-color: white;
+    display: inline;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 100%;
+    font-weight: normal;
+
+}
+
+div.user_options .options_layout_grid tr td {
+    text-align: center;
+    margin: 0.1em;
+    padding: 0.1em;
+    position: relative;
+}
+
+.options_layout_grid p, .options_layout_grid td {
+    margin: 0;
+}
+
+table.options_layout_grid {
+    margin-top: -1em;
+}
+
+table {
+    /* using tables should not change font size */
+    font-size: 100%;
+}
+
+div.user_options label.user_options_radio {
+    border: 0.1em solid CornflowerBlue;
+    margin: 0.1em;
+    margin-right: 0.25em;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+
+div.user_options label.user_options_radio:hover {
+    box-shadow: 0 0 0 0.2em gold;
+}
+
+div.user_options input[type="radio"]:checked + label.user_options_radio {
+    border-color: green;
+    background-color: chartreuse;
+}
+
+div.user_options input[type="radio"] {
+    position: absolute;
+    width: 60%;
+    height: 2em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+div.navigation_header input[type="checkbox"] {
+    display: none;
+}
+
+div.user_options select {
+    display: none;
+}
+
+div.user_options .spinner_display {
+    display: inline-block;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.5em;
+    margin: 0.1em;
+    padding: 0.2em;
+    font-size: 100%;
+    min-width: 3em;
+}
+
+div.user_options .button_div {
+    border: 0.1em solid CornflowerBlue;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    background: none;
+    min-width: 1.5em;
+    font-family: "Jotter Primary", sans-serif;
+    display: inline-block;
+}
+
+div.user_options button:hover {
+    box-shadow: 0 0 0 0.2em gold;
+}
+
+.main_button {
+    font-size: 150%;
+    border: 0.2em solid orange;
+    background: #ccffff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin: 0.1em;
+    border-radius: 0.5em;
+    font-family: Jotter Primary, sans-serif;
+
+}
+
+.main_button:hover {
+    background: white;
+    box-shadow: 0 0 0 0.1em orange;
+}
+
+table.score_sheet {
+    font-size: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+td.score_sheet_results, th.score_sheet_results {
+    border-bottom: 0.1em solid darkgrey;
+}
+
+td.score_sheet_star, th.score_sheet_star, .score_sheet_star img {
+    border: hidden;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.version_embed, .version_embed embed {
+    color: #bbbbbb;
+    display: block;
+    width: 300px;
+    height: 50px;
+}
+
+input.two_divs_check[type="checkbox"] ~ div.checked_on {
+    display: inline-block;
+}
+
+input.two_divs_check[type="checkbox"]:checked ~ div.checked_off {
+    display: none;
+}
+
+input.two_divs_check[type="checkbox"]:not(:checked) ~ div.checked_on {
+    display: none;
+}
+
+input.two_divs_check[type="checkbox"]:not(:checked) ~ div.checked_off {
+    display: inline-block;
+}
+
+input.two_divs_check[type="checkbox"] {
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.title_message {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+#dwNavigationFooter {
+
+    text-align: right;
+    color: #bbbbbb;
+    position: absolute;
+    height: 2.5em;
+    width: 5em;
+    right: 0;
+    bottom: 0.25em;
+
+}
+
+.scan_highlight
+{
+    box-shadow: 0 0 0 0.4em gold;
+}
+
+
+::placeholder { /* Most modern browsers support this now. */
+    opacity: 0.10;
+}
+
+.info_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resultsTable1, #resultsTable2 {
+    font-size: 90%;
+}
+
+table#resultsTable1 th , table#resultsTable1 tr, table#resultsTable1 td, table#resultsTable2 th , table#resultsTable2 tr, table#resultsTable2 td{
+    padding: .25rem;
+}
+
+.form-control {
+    height: 2.5em;
+    width: 100%;
+}

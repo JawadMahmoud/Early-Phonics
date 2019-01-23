@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta content="utf-8">
+<!-- HEAD STARTS HERE
+
+*include the meta tags
+*the link to css
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/doorway.css">
+    <title>First Phonics</title>
+
+</head>
+
+<!-- BODY STARTS HERE -->
+
+<body style="font-family: 'Jotter Primary', sans-serif">
+
+<!-- TOP OPTIONS BAR -->
+<div id="dwWholeApp" class="doorway_application">
+    <div id="dwFullScreenDiv" class="doorway_fullscreen_div">
+        <div id="dwAspectOuterDiv" class="doorway_aspect_outer_div">
+            <div id="dwAspectDiv" class="doorway_aspect_div">
+                <div id="body"></div>
+                <div id="keyboard_render"></div>
+                <div id="top"></div>
+                <div id="footer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- react imports -->
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- might delete -->
+
+<script src="js/Functionality/settings.js"></script>
+<script src="js/Functionality/settingsReady.js"></script>
+<script src="js/Functionality/cashing-in.js"></script>
+<script src="js/Functionality/selection.js"></script>
+<script src="js/Functionality/onLoad.js"></script>
+<script src="js/Functionality/gameDemo.js"></script>
+<script src="js/Functionality/selection.js"></script>
+<script src="js/Functionality/loadResults.js"></script>
+<script src="js/Functionality/startGame.js"></script>
+<script src="js/Functionality/keyboardKeys.js"></script>
+<script src="js/Functionality/cookies.js"></script>
+	
+
+<!-- react division -->
+<script type="text/babel" src="js/Surroundings/TopBar.js"></script>
+<script type="text/babel" src="js/Surroundings/TopBarIndex.js"></script>
+<script type="text/babel" src="js/Surroundings/Footer.js"></script>
+<script type="text/babel" src="js/Pages/settingsPage.js"></script>
+<script type="text/babel" src="js/Pages/selectionPage.js"></script>
+<script type="text/babel" src="js/Pages/resultsPage.js"></script>
+<script type="text/babel" src="js/Pages/gamePage.js"></script>
+<script type="text/babel" src="js/Pages/index.js"></script>
+<script type="text/babel" src="js/Pages/infoPage.js"></script>
+<script type="text/babel" src="js/Pages/copyrightPage.js"></script>
+<script type="text/babel" src="js/Pages/wordsPage.js"></script>
+<script type="text/babel" src="js/Pages/keyboard.js"></script>
+
+
+</body>
+</html>

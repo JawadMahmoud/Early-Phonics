@@ -1,0 +1,97 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="285px" height="427px" viewBox="0 0 285 427">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="129.3125" y1="282.85" x2="158.58749999999998" y2="282.85" spreadMethod="pad">
+<stop  offset="0%" stop-color="#090909"/>
+
+<stop  offset="57.254901960784316%" stop-color="#666666"/>
+
+<stop  offset="99.2156862745098%" stop-color="#222222"/>
+</linearGradient>
+
+<g id="Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 158.65 312.1
+L 129.35 312 129.35 372.2 158.65 371.85 158.65 312.1 Z"/>
+
+<path fill="#FF0000" stroke="none" d="
+M 210.6 55.55
+L 194.75 55.55 90.3 55.3 74.8 55.3 5.85 124.3 5.85 243.45 74.45 311.9 90.3 311.9 129.35 312 158.65 312.1 194.75 312.15 210.2 312.15 279.15 243.2 279.15 124.1 210.6 55.55
+M 191.2 62.05
+L 206.45 62.05 272.75 127.75 272.75 238.85 206.15 304.9 191.2 304.9 158.65 304.9 129.35 304.9 93.75 304.85 78.65 304.85 12.4 239 12.4 127.9 79 62 93.75 62 191.2 62.05
+M 206.45 62.05
+L 191.2 62.05 93.75 62 79 62 12.4 127.9 12.4 239 78.65 304.85 93.75 304.85 129.35 304.9 158.65 304.9 191.2 304.9 206.15 304.9 272.75 238.85 272.75 127.75 206.45 62.05 Z"/>
+</g>
+
+<path id="Layer0_0_1_STROKES" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 158.65 371.85
+L 158.65 312.1
+M 129.35 312
+L 129.35 372.2"/>
+
+<path id="Layer0_0_2_STROKES" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 206.45 62.05
+L 272.75 127.75 272.75 238.85 206.15 304.9 191.2 304.9 158.65 304.9 129.35 304.9 93.75 304.85 78.65 304.85 12.4 239 12.4 127.9 79 62 93.75 62 191.2 62.05 206.45 62.05 Z"/>
+
+<path id="Layer0_0_3_STROKES" stroke="#000000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 129.35 312
+L 90.3 311.9 74.45 311.9 5.85 243.45 5.85 124.3 74.8 55.3 90.3 55.3 194.75 55.55 210.6 55.55 279.15 124.1 279.15 243.2 210.2 312.15 194.75 312.15 158.65 312.1 129.35 312 Z"/>
+
+<font horiz-adv-x="2048">
+<!--  Font Name: Arial
+Vendor ID: TMC 
+© 2017 The Monotype Corporation. All Rights Reserved. 
+
+Hebrew OpenType Layout logic copyright © 2003 & 2007, Ralph Hancock & John Hudson. This layout logic for Biblical Hebrew is open source software under the MIT License; see embedded license description for details.
+URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=TMC&Name=Arial&PSName=ArialMT&applanguage=en_US-->
+<font-face font-family="Arial_Regular" units-per-em="2048" ascent="1854" descent="434"/>
+
+<hkern u1="T" u2="O" k="37"/>
+
+<glyph unicode="S" horiz-adv-x="1366" d="
+M 92 471
+L 275 487
+Q 288 377 336 306 383 236 483 192 583 149 708 149 819 149 904 182 989 215 1031 272 1072 330 1072 398 1072 467 1032 518 992 570 900 605 841 628 639 676 437 725 356 768 251 823 200 904 148 986 148 1087 148 1198 211 1294 274 1391 395 1441 516 1491 664 1491 827 1491 952 1438 1076 1386 1143 1284 1210 1182 1215 1053
+L 1029 1039
+Q 1014 1178 928 1249 841 1320 672 1320 496 1320 416 1255 335 1191 335 1100 335 1021 392 970 448 919 685 865 921 812 1009 772 1137 713 1198 622 1259 532 1259 414 1259 297 1192 193 1125 90 1000 32 874 -25 717 -25 518 -25 384 33 249 91 173 207 96 324 92 471 Z"/>
+
+<glyph unicode="T" horiz-adv-x="1251" d="
+M 531 0
+L 531 1293 48 1293 48 1466 1210 1466 1210 1293 725 1293 725 0 531 0 Z"/>
+
+<glyph unicode="O" horiz-adv-x="1593" d="
+M 99 714
+Q 99 1079 295 1285 491 1492 801 1492 1004 1492 1167 1395 1330 1298 1416 1124 1501 951 1501 731 1501 508 1411 332 1321 156 1156 65 991 -25 800 -25 593 -25 430 75 267 175 183 348 99 521 99 714 Z
+M 299 711
+Q 299 446 442 293 584 141 799 141 1018 141 1160 295 1301 449 1301 732 1301 911 1241 1044 1180 1178 1064 1251 947 1325 802 1325 596 1325 448 1183 299 1042 299 711 Z"/>
+
+<glyph unicode="P" horiz-adv-x="1366" d="
+M 158 0
+L 158 1466 711 1466
+Q 857 1466 934 1452 1042 1434 1115 1383 1188 1333 1233 1242 1277 1151 1277 1042 1277 855 1158 725 1039 596 728 596
+L 352 596 352 0 158 0 Z
+M 352 769
+L 731 769
+Q 919 769 998 839 1077 909 1077 1036 1077 1128 1031 1193 984 1259 908 1280 859 1293 727 1293
+L 352 1293 352 769 Z"/>
+</font>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_FILL"/>
+
+<use xlink:href="#Layer0_0_1_STROKES"/>
+
+<use xlink:href="#Layer0_0_2_STROKES"/>
+
+<use xlink:href="#Layer0_0_3_STROKES"/>
+</g>
+
+<g transform="matrix( 4.225128173828125, 0, 0, 4.225128173828125, 37.05,130.25) ">
+<clipPath id="Mask_Mask_1">
+<rect x="-2" y="-2" width="58.65" height="26.35" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_1)" writing-mode="lr"><tspan x="0" y="18.1" baseline-shift="0%" kerning="0" font-family="Arial_Regular" font-size="20" fill="#FFFFFF" xml:space="preserve">STOP</tspan></text>
+</g>
+</svg>
