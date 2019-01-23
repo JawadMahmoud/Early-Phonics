@@ -158,13 +158,13 @@ function demoSettings() {
 		
 		
 	}else if (document.getElementById('blends_input').checked){
-		var wordlist = ['crab', 'clap', 'drum', 'frog', 'flag', 'pram', 'plug', 'stop', 'swim', 'gift', 'raft', 'bulb', 'golf', 'belt', 'milk', 'lamp', 'hand', 'tent', 'desk', 'fist', 'nest', 'ant', 'shelf', 'tree', 'spoon', 'brush', 'green', 'flash', 'stamp', 'swing', 'string'];
+		var wordlist = ['ant', 'belt', 'brush', 'bulb', 'clap', 'crab', 'desk', 'drum', 'fist', 'flag', 'flash', 'frog', 'gift', 'golf', 'green', 'hand', 'lamp', 'milk', 'nest', 'plug', 'pram', 'raft', 'shelf', 'spoon', 'stamp', 'stop', 'string', 'swim', 'swing', 'tent', 'tree'];
 
 	}else if(document.getElementById('digraphs_input').checked){
-		var wordlist = ['bath', 'path', 'chin', 'fish', 'ship', 'bee', 'heel', 'feet', 'jeep', 'peek', 'peel', 'weed', 'queen', 'foot', 'food', 'good', 'book', 'boot', 'cook', 'hood', 'hoof', 'hook', 'loop', 'moon', 'pool', 'roof', 'wood', 'wool', 'ring', 'king', 'swing', 'string'];
+		var wordlist = ['bath', 'bee', 'book', 'boot', 'chin', 'cook', 'feet', 'fish', 'food', 'foot', 'good', 'heel', 'hood', 'hoof', 'hook', 'jeep', 'king', 'loop', 'moon', 'path', 'peek', 'peel', 'pool', 'queen', 'ring', 'roof', 'ship', 'string', 'swing', 'weed', 'wood', 'wool'];
 
 	}else if(document.getElementById('moredigraphs_input').checked){
-		var wordlist = ['nail', 'tail', 'hair', 'chair', 'train', 'snail', 'rain', 'cloud','mouth', 'road', 'coat', 'goat', 'pie', 'tie', 'coin', 'oil', 'cue','car', 'jar', 'dart', 'shark', 'star', 'fork', 'horn', 'kerb', 'pink', 'tank', 'chick', 'sock', 'ill', 'shell', 'egg'];	
+		var wordlist = ['car', 'chair', 'chick', 'cloud', 'coat', 'coin', 'cue', 'dart', 'egg', 'fork', 'goat', 'hair', 'horn', 'ill', 'jar', 'kerb', 'mouth', 'nail', 'oil', 'pie', 'pink', 'rain', 'road', 'shark', 'shell', 'snail', 'sock', 'star', 'tail', 'tank', 'tie', 'train'];
 		
 	}else{
 		var wordlist = [''];

@@ -55,7 +55,7 @@ class GamePage extends React.Component{
                 </div>
 
 
-                <div className="version_number"><p>version 0.8</p></div>
+                <div className="version_number"><p>version {window.version}</p></div>
                 <div id={"modal"}></div>
             </div>
 

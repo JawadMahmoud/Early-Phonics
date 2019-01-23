@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
                     <p className="copyright_message">Copyright &copy; 2019 The Doorway Accessible Software Trust</p>
 
                 </div>
-                <div className="version_number"><p>version 0.8</p></div>
+                <div className="version_number"><p>version {window.version}</p></div>
             </div>
         );
     }
@@ -154,5 +154,5 @@ function LoadKeyboard() {
         }
 	}
 }
-
+window.version = "0.8";
 window.onload = LoadIndexPage();

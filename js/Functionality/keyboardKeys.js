@@ -36,7 +36,7 @@ function getKeys() {
     var inputIndex = 0;
     for (i= 0 ; i < keyboard_res.length; i++) {
         for(j=0; j < 4; j++) {
-            keyboard_res[i][j].key = shuffled[inputIndex];
+            keyboard_res[i].keys[j].key = shuffled[inputIndex];
             inputIndex++;
         }
     }

@@ -67,7 +67,7 @@ class CopyrightPage extends React.Component {
                 </div>
 
 
-                <div className="version_number"><p>version 0.8</p></div>
+                <div className="version_number"><p>version {window.version}</p></div>
                 <div id="dwNavigationFooter" style={{height: "1.25em", width: "10em"}}>
                     <button class="main_button" style={{fontSize: "1.5vw"}} onClick={this.show_words}>Words</button>
                     <button class="main_button" style={{fontSize: "1.5vw"}} onClick={this.show_info}>Gameplay</button>
