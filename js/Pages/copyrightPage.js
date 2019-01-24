@@ -16,7 +16,7 @@ class CopyrightPage extends React.Component {
         return (
 
             <div className="user_options">
-                <h1 className="title_message" style={{fontSize: "3vw"}}>Information</h1>
+                <h1 className="title_message" style={{fontSize: "2.25vw"}}>Information</h1>
                 <p style={{fontSize: "1vw"}}>About this Application</p>
 
                 <div className="options_group accessibility_options">
@@ -27,7 +27,7 @@ class CopyrightPage extends React.Component {
                             <td>
                                 <ul>
                                     <p className="info_text" style={{fontSize: "1vw"}}>Original Concept:</p>
-                                    <p style={{fontSize: "2vw"}}>Philip Wittaker</p>
+                                    <p style={{fontSize: "2vw"}}>Philip Whittaker</p>
                                     <p className="info_text" style={{fontSize: "1vw"}}>Original Design and Implementation in RISC OS:</p>
                                     <p style={{fontSize: "2vw"}}>Andrew Burt</p>
                                 </ul>
@@ -38,7 +38,9 @@ class CopyrightPage extends React.Component {
                                     <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in Flash:</p>
                                     <p style={{fontSize: "2vw"}}>Thomas Whitlee</p>
                                     <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in HTML5:</p>
-                                    <p style={{fontSize: "2vw"}}>SE05</p>
+                                    <p style={{fontSize: "1.25vw"}}>University of Glasgow students</p>
+                                    <p style={{fontSize: "1.5vw"}}>Ivelina Doynova, Jan Paralic,</p>
+                                    <p style={{fontSize: "1.5vw"}}>Jawad Mahmoud, Matus Gallik</p>
                                 </ul>
                             </td>
                         </tr>

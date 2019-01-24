@@ -24,8 +24,10 @@ class IndexPage extends React.Component {
                         </p>
                     </div>
                     <p className="copyright_message">First Words | First Digraphs | More Digraphs | First Blends</p>
+                    <p></p><p></p>
                     <button id="dwButtonToOptions" className="main_button" onClick={window.LoadSettingsPage}>Enter
                     </button>
+                    <p></p><p></p>
                     <p className="copyright_message">Copyright &copy; 2019 The Doorway Accessible Software Trust</p>
 
                 </div>
@@ -40,7 +42,7 @@ function LoadSettingsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBar back={window.LoadIndexPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar back={window.LoadIndexPage} info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<SettingsPage/>, document.getElementById('body'));
     ReactDOM.render(<Footer next={window.LoadSelectionPage}/>, document.getElementById('footer'));
     SettingsReady();
@@ -154,5 +156,5 @@ function LoadKeyboard() {
         }
 	}
 }
-window.version = "0.8";
+window.version = "0.85";
 window.onload = LoadIndexPage();

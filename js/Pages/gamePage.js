@@ -6,6 +6,7 @@ class GamePage extends React.Component{
         document.getElementById("word-audio").play();
     }
     render(){
+        const audioEnabled = (getCookie("audioEnabled")==='1');
         const colourless = this.props.colourless;
         return(
             <div className="user_options">
@@ -19,8 +20,8 @@ class GamePage extends React.Component{
                         </p>
                         <p id="word-text" style={{"fontSize":"2.5vw","text-decoration":"underline"}}></p>
                         <img className="spell-word" id="spell-word" src="resources/icons/ear.svg" onClick={this.repeatAudio}></img>
-                        <audio id="word-audio" autoPlay={false} loop={false}></audio>
-                        <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false}></audio>
+                        <audio id="word-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
+                        <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
                         {/* <!-- </div> --> */}
                     </div>
 

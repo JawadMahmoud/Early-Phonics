@@ -144,6 +144,8 @@ function demoSettings() {
             coloured_keys = false;
         }
     })
+
+    $("#dwInfoButton").show();
 	
 	//set default wordlist on load of this webpage
 		var wordlist = ['bag', 'bed', 'bin', 'box', 'can', 'cap', 'cat', 'dog', 'fan', 'fox', 'hat', 'hen', 'jam', 'jug', 'leg', 'man', 'map', 'men', 'mug', 'net', 'pan', 'peg', 'pen', 'pig', 'rat', 'red', 'sun', 'tap', 'ten', 'van', 'web', 'zip'];

@@ -16,7 +16,7 @@ class InfoPage extends React.Component {
         return (
 
             <div className="user_options">
-                <h1 className="title_message" style={{fontSize: "3vw"}}>Information</h1>
+                <h1 className="title_message" style={{fontSize: "2.25vw"}}>Information</h1>
                 <p style={{fontSize: "1vw"}}>Gameplay Instructions</p>
 
                 <div className="options_group accessibility_options">
@@ -35,7 +35,7 @@ class InfoPage extends React.Component {
                         <tr className="options_labels info_text" style={{fontSize: "1vw"}}>
                             <td>
                                 <ul>
-                                    <li><p>'Testing' doesn't show the words alongside the pictures.</p></li>
+                                    <li><p>'Assessment' doesn't show the words alongside the pictures.</p></li>
                                     <li><p>'Learning' shows the words alongside the pictures.</p></li>
                                 </ul>
                             </td>
@@ -80,7 +80,7 @@ class InfoPage extends React.Component {
                         <tbody>
                         <tr className="options_labels info_text" style={{fontSize: "1vw"}}>
                             <td>
-                                <p>You can choose from a large list of words which can be nacigated through pages. Click
+                                <p>You can choose from a large list of words which can be navigated through pages. Click
                                     on the word to add it
                                     to the selection and click on the red cross next to the word to remove it from the
                                     selection. You are also able to

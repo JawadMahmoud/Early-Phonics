@@ -30,7 +30,7 @@ function StartGame(tries,tryCounter){
 	var audioOnEnded = function() {
 		console.log("test");
 		console.log(audioElement.src);
-		if (audioElement.src.indexOf("resources/sounds/spelltheword.wav")!==-1) {
+		if (audioElement.src.indexOf("resources/sounds/spelltheword.mp3")!==-1) {
 			audioElement.src = "resources/sounds/" + currentImage + ".mp3";
 			audioElement.play();
 		}
@@ -40,7 +40,7 @@ function StartGame(tries,tryCounter){
 	// load image
 	document.getElementById('img-random').src='resources/images/' + currentImage + '.svg';
 	sessionStorage.setItem("currentImage", currentImage);
-	audioElement.src = "resources/sounds/spelltheword.wav";
+	audioElement.src = "resources/sounds/spelltheword.mp3";
 	audioElement.addEventListener("ended", audioOnEnded);
 	//audioElement.src = "resources/sounds/" + currentImage + ".mp3";
 	audioElement.play();

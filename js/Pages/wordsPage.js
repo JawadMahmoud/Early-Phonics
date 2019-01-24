@@ -16,7 +16,7 @@ class WordsPage extends React.Component {
         return (
 
             <div className="user_options">
-                <h1 className="title_message" style={{fontSize: "3vw"}}>Information</h1>
+                <h1 className="title_message" style={{fontSize: "2.25vw"}}>Information</h1>
                 <p style={{fontSize: "1vw"}}>Word Lists</p>
 
                 <div className="options_group accessibility_options">

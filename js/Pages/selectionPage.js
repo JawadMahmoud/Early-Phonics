@@ -217,138 +217,139 @@ class SelectionPage extends React.Component {
                     </table>
                 </div>
 
-                <div className="container" id="select" style={{fontSize: "1vw"}}>
-                    <div className="row justify-content-center" style={{margin: "0.2em"}}>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                    </div>	
-                    <div className="row justify-content-center" style={{margin: "0.2em"}}>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
+                <div className="container-fluid" id="select">
+
+                            <div className="row">
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button selected" readOnly></button>
+                                </div>
+                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
+                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                            </div>
                     </div>
-                    <div className="row justify-content-center" style={{margin: "0.2em"}}>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center" style={{margin: "0.2em"}}>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center" style={{margin: "0.2em"}}>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                        <div className="col-xs-3 col-sm-2 col-md-2 text-center">
-                            <button className="form-control text-center" readOnly></button>
-                        </div>
-                        <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="version_number"><p>version {window.version}</p></div>
 

@@ -44,6 +44,12 @@ body {
     width: 100%;
 }
 
+.word-button.selected {
+    cursor: grab;
+    opacity: 0.75;
+    background-color: white;
+}
+
 .nav-link.selection_pill_tabs.active {
     color: black;
     background-color: chartreuse;
