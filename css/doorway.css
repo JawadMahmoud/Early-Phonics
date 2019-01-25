@@ -44,7 +44,7 @@ body {
     width: 100%;
 }
 
-.word-button.selected {
+.word-button.chosen {
     cursor: grab;
     opacity: 0.75;
     background-color: white;
@@ -596,7 +596,7 @@ input.two_divs_check[type="checkbox"] {
     text-align: right;
     color: #bbbbbb;
     position: absolute;
-    height: 2em;
+    height: 2.5em;
     width: 5em;
     right: 0;
     bottom: 0.25em;
@@ -628,4 +628,10 @@ table#resultsTable1 th , table#resultsTable1 tr, table#resultsTable1 td, table#r
 .form-control {
     height: 2.5em;
     width: 100%;
+}
+
+.selected {
+    /* background-color: cornflowerblue; */
+    /* border-color: cornflowerblue; */
+    border: 3px solid cornflowerblue;
 }

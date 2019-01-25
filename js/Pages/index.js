@@ -76,6 +76,7 @@ function LoadGamePage() {
     //Doorway();
     StartGame();
     LoadKeyboard();
+    startScanning();
     //scanner_demo();
     // console.log(getCookie("FirstCookie"));
 	
@@ -156,5 +157,5 @@ function LoadKeyboard() {
         }
 	}
 }
-window.version = "0.85";
+window.version = "0.9";
 window.onload = LoadIndexPage();

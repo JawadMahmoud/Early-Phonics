@@ -31,6 +31,9 @@ function changeInfoTextSwitch(value) {
 var keyboard_select = "restricted";
 var coloured_keys = true;
 var mode_select = "testing";
+var switchIsOn = true;
+var timeSwitch = 2;
+var twoSwitches = false;
 
 function getSettingsValues() {
 
@@ -111,6 +114,8 @@ function demoSettings() {
         if (val == "true") {
             $(".switch_num_div").show();
             $("#radio-switches-2").prop('checked', true);
+            switchIsOn = true;
+			twoSwtiches = true;
         } else if (val == "false") {
             $(".switch_num_div").hide();
             $(".switch_time_div").hide();
@@ -118,6 +123,8 @@ function demoSettings() {
             $("#time-switches-1").prop('checked', false);
             $("#time-switches-2").prop('checked', false);
             $("#time-switches-3").prop('checked', false);
+            switchIsOn = false;
+			twoSwtiches = false;
         }
         // delCookie("KeyboardCookie");
     })
@@ -127,12 +134,37 @@ function demoSettings() {
         if (val == "1") {
             $(".switch_time_div").show();
             $("#time-switches-2").prop('checked', true);
+            twoSwitches = false;
+            timeSwitch = 2;
         } else if (val == "2") {
             $(".switch_time_div").hide();
             $("#time-switches-1").prop('checked', false);
             $("#time-switches-2").prop('checked', false);
             $("#time-switches-3").prop('checked', false);
+            twoSwitches = true;
+            timeSwitch = null;
         }
+    })
+
+    $(".switch_time").click(function () {
+        var val = $(this).attr('value');
+        if (val == "1s") {
+            $("#time-switches-1").prop('checked', true);
+            $("#time-switches-2").prop('checked', false);
+            $("#time-switches-3").prop('checked', false);
+            timeSwitch = 1;
+        } else if (val == "2s") {
+            $("#time-switches-2").prop('checked', true);
+            $("#time-switches-1").prop('checked', false);
+            $("#time-switches-3").prop('checked', false);
+            timeSwitch = 2;
+        } else if (val == "3s"){
+            $("#time-switches-3").prop('checked', true);
+            $("#time-switches-1").prop('checked', false);
+            $("#time-switches-2").prop('checked', false);
+            timeSwitch = 3;
+        }
+            
     })
 
     $(".colour_mode").click( function() {
@@ -173,6 +205,8 @@ function demoSettings() {
 	}
 	
 	sessionStorage.setItem("wordlist", wordlist);
-	console.log(wordlist);
-	}
+    console.log(wordlist);
+    }
+
+
 }

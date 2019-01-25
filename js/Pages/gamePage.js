@@ -19,7 +19,7 @@ class GamePage extends React.Component{
                             Spell the word...
                         </p>
                         <p id="word-text" style={{"fontSize":"2.5vw","text-decoration":"underline"}}></p>
-                        <img className="spell-word" id="spell-word" src="resources/icons/ear.svg" onClick={this.repeatAudio}></img>
+                        <img className="spell-word zeroRow" id="spell-word" src="resources/icons/ear.svg" onClick={this.repeatAudio}></img>
                         <audio id="word-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
                         <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
                         {/* <!-- </div> --> */}
@@ -44,7 +44,7 @@ class GamePage extends React.Component{
                                 </div>
                             </div>
                             <div className="row">
-                                <div id="check-button">
+                                <div id="check-button"  className = "zeroRow">
                                     <img alt="check-button" id="check-button" src="resources/icons/checkbox.svg"/>
                                 </div>
                             </div>

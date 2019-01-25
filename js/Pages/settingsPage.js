@@ -143,7 +143,7 @@ class SettingsPage extends React.Component {
                                 </td>
                                 <td></td>
                                 <td></td>
-                                <td>
+                                <td id="scanner">
                                     <input type="radio" name="enable_scanning" value="true" id="radio-scanning-on"
                                            className="switch_mode"></input>
                                     <label htmlFor="radio-scanning-on"
@@ -156,7 +156,7 @@ class SettingsPage extends React.Component {
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <div className="switch_num_div">
+                                    <div className="switch_num_div"  id="switch_amount">
                                         <input type="radio" name="num_switches" value="1" id="radio-switches-1"
                                                className="switch_number"></input>
                                         <label htmlFor="radio-switches-1"
@@ -170,17 +170,17 @@ class SettingsPage extends React.Component {
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <div className="switch_time_div">
+                                    <div className="switch_time_div"  id="oneSwitchTime">
                                         <input type="radio" name="time_switches" value="1s" id="time-switches-1"
                                                className="switch_time"></input>
                                         <label htmlFor="time-switches-1"
                                                className="user_options_radio button_div">1s</label>
                                         <input type="radio" name="time_switches" value="2s" id="time-switches-2"
-                                               className="switch_number"></input>
+                                               className="switch_time"></input>
                                         <label htmlFor="time-switches-2"
                                                className="user_options_radio button_div">2s</label>
                                         <input type="radio" name="time_switches" value="3s" id="time-switches-3"
-                                               className="switch_number"></input>
+                                               className="switch_time"></input>
                                         <label htmlFor="time-switches-3"
                                                className="user_options_radio button_div">3s</label>
                                     </div>

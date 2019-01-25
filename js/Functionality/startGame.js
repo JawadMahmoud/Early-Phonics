@@ -76,6 +76,8 @@ function StartGame(tries,tryCounter){
 					modalElement.style.display = "none";
 					StartGame(tries,tryCounter);
 					LoadKeyboard();
+					startScanning();
+					stopScanning();
 					correctAudioElement.removeEventListener("ended",correctAudioOnEnded);
 				};
 				correctAudioElement.addEventListener("ended",correctAudioOnEnded);
@@ -83,7 +85,7 @@ function StartGame(tries,tryCounter){
 				//document.getElementById("nextBtn").hidden = false;
 
 			}else{      //no more left -> activate NEXT btn
-				
+				stopScanning();
 				//Save the points for results to load
 				sessionStorage.setItem("tries", JSON.stringify(tries));
 				console.log(tries);
@@ -100,6 +102,8 @@ function StartGame(tries,tryCounter){
 			}
 		// miss
 		}else{
+			stopScanning();
+			startScanning();
 			//console.log('TRY AGAIN');
 			//this is the first miss
 			modalElement.innerHTML = "Try again!";
@@ -116,7 +120,8 @@ function StartGame(tries,tryCounter){
 		}
 		
 	}
-	
+
+	//$("#write").focus();
 
 	
 };
