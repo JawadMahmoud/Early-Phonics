@@ -81,6 +81,10 @@ function getSettingsValues() {
 
 function demoSettings() {
 
+    switchIsOn = false;
+    timeSwitch = 2;
+    twoSwitches = true;
+
     $(".input_mode").click(function () {
         var val = $(this).attr('value');
         if (val == "testing") {
