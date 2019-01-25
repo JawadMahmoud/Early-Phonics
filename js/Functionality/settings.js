@@ -31,9 +31,9 @@ function changeInfoTextSwitch(value) {
 var keyboard_select = "restricted";
 var coloured_keys = true;
 var mode_select = "testing";
-var switchIsOn = true;
+var switchIsOn = false;
 var timeSwitch = 2;
-var twoSwitches = false;
+var twoSwitches = true;
 
 function getSettingsValues() {
 
