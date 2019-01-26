@@ -196,7 +196,7 @@ function demoSettings() {
             setCookie("GameTypeCookie","words_input",2);
 
         } else if (document.getElementById('blends_input').checked) {
-            wordlist = ['ant', 'belt', 'brush', 'bulb', 'clap', 'crab', 'desk', 'drum', 'fist', 'flag', 'flash', 'frog', 'gift', 'golf', 'green', 'hand', 'lamp', 'milk', 'nest', 'plug', 'pram', 'raft', 'shelf', 'spoon', 'stamp', 'stop', 'string', 'swim', 'swing', 'tent', 'tree'];
+            wordlist = ['ant', 'belt', 'brush', 'bulb', 'clap', 'crab', 'desk', 'drum', 'fist', 'flag', 'flask', 'frog', 'gift', 'golf', 'green', 'hand', 'lamp', 'milk', 'nest', 'plug', 'pram', 'raft', 'shelf', 'spoon', 'stamp', 'stop', 'string', 'swim', 'swing', 'tent', 'tree'];
             setCookie("GameTypeCookie","blends_input",2);
 
         } else if (document.getElementById('digraphs_input').checked) {
