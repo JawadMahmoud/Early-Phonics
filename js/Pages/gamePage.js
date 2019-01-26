@@ -5,6 +5,11 @@ class GamePage extends React.Component{
     repeatAudio(){
         document.getElementById("word-audio").play();
     }
+    inputBoxKeyUp(event) {
+        if(event.keyCode==13 || event.key == 13 || event.keyIdentifier == 13) {
+            $("#check-button").click();
+        }
+    }
     render(){
         const audioEnabled = (getCookie("audioEnabled")==='1');
         const colourless = this.props.colourless;
@@ -40,7 +45,7 @@ class GamePage extends React.Component{
                             <div className="row">
                                 <div id="text-place">
                                     {/* <!--<textarea id="write" maxlength="10" cols="20"></textarea>--> */}
-                                    <input id="write" type="text" placeholder="answer" maxLength="6" style={{"fontSize":"3vw", width:"5em", borderRadius:"10px", paddingLeft: "15px"}}></input>
+                                    <input id="write" onKeyUp={this.inputBoxKeyUp} type="text" placeholder="answer" maxLength="6" style={{"fontSize":"3vw", width:"5em", borderRadius:"10px", paddingLeft: "15px"}}></input>
                                 </div>
                             </div>
                             <div className="row">

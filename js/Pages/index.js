@@ -45,8 +45,6 @@ function LoadSettingsPage() {
     ReactDOM.render(<TopBar back={window.LoadIndexPage} info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<SettingsPage/>, document.getElementById('body'));
     ReactDOM.render(<Footer next={window.LoadSelectionPage}/>, document.getElementById('footer'));
-    SettingsReady();
-    //Doorway();
     getSettingsValues();
     demoSettings();
 }
@@ -60,7 +58,6 @@ function LoadSelectionPage() {
     ReactDOM.render(<SelectionPage/>, document.getElementById('body'));
     ReactDOM.render(<Footer next={window.LoadGamePage}/>, document.getElementById('footer'));
     selectionPageLoaded();
-    //Doorway();
 }
 
 
@@ -69,16 +66,12 @@ function LoadGamePage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    //getKeys();
     ReactDOM.render(<TopBar back={window.LoadSelectionPage}/>, document.getElementById('top'));
     ReactDOM.render(<Footer next={window.LoadResultsPage}/>, document.getElementById('footer') );
     ReactDOM.render(<GamePage />, document.getElementById('body') );
-    //Doorway();
     StartGame();
     LoadKeyboard();
     startScanning();
-    //scanner_demo();
-    // console.log(getCookie("FirstCookie"));
 	
 
 }
@@ -90,10 +83,8 @@ function LoadResultsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSelectionPage}/>, document.getElementById('top'));
     ReactDOM.render(<ResultsPage restart={window.LoadIndexPage}/>, document.getElementById('body'));
-    // ReactDOM.render(<Footer next={window.LoadGamePage}/>, document.getElementById('footer'));
 
 	LoadResults();
-    //Doorway();
 
 }
 
@@ -104,10 +95,7 @@ function LoadIndexPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBarIndex info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<IndexPage/>, document.getElementById('body'));
-    Doorway();
-    // console.log(getCookie("FirstCookie"))
-    // setCookie("FirstCookie", "One", 1);
-    //ReactDOM.render(<Footer next={window.LoadSettingsPage}/>, document.getElementById('footer') );
+    Resizing();
 };
 
 function LoadInfoPage() {
@@ -115,9 +103,8 @@ function LoadInfoPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBar back={window.LoadIndexPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
     ReactDOM.render(<InfoPage copy={window.LoadCopyrightPage} words={window.LoadWordsPage}/>, document.getElementById('body'));
-    //Doorway();
 }
 
 function LoadCopyrightPage() {
@@ -125,9 +112,8 @@ function LoadCopyrightPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBar back={window.LoadIndexPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
     ReactDOM.render(<CopyrightPage info={window.LoadInfoPage} words={window.LoadWordsPage}/>, document.getElementById('body'));
-    //Doorway();
 }
 
 function LoadWordsPage() {
@@ -135,7 +121,7 @@ function LoadWordsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBar back={window.LoadIndexPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
     ReactDOM.render(<WordsPage info={window.LoadInfoPage} copy={window.LoadCopyrightPage}/>, document.getElementById('body'));
 }
 
@@ -157,5 +143,5 @@ function LoadKeyboard() {
         }
 	}
 }
-window.version = "0.9";
+window.version = "0.9.0.1";
 window.onload = LoadIndexPage();

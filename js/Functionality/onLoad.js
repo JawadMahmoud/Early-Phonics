@@ -1,10 +1,10 @@
 function onLoad(wordlist, id, elt) {
-	
+
     var words = $(id).find(elt);
-	for (i=0; i<words.length;i++){
-		$(words[i]).text("");
-		
-	}
+    for (i = 0; i < words.length; i++) {
+        $(words[i]).text("");
+
+    }
 
     for (i = 0; i < wordlist.length; i++) {
 

@@ -80,7 +80,7 @@ function oneSwitch(timeInterval, rows){
 
 		function refreshData(){ //every time interval select and react
 
-			document.body.onkeyup = function(e){ 
+			document.body.onkeyup = function(e){
 				if(e.keyCode == 32){  // if space pressed
 					if(!rowSelected){  // and row has not been selected
 						rowSelected = true; 
