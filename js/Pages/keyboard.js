@@ -38,7 +38,7 @@ class Keyboard extends React.Component{
                             <div className="twelve columns">
                                 {element.keys.map(function(element2) {
                                     return (
-                                        <button onClick={keyboardPress} type="button" id={element2.id} className={"btn "+ ((unicolor && element2.id !== "del-button") ? "" : element2.cls) +" keyboard-key "+(restricted ? "res" : "")} key={element2.key}>{element2.key}</button>
+                                        <button onClick={keyboardPress} type="button" id={element2.id} className={"btn "+ ((unicolor) ? "" : element2.cls) +" keyboard-key "+(restricted ? "res" : "")} key={element2.key}>{element2.key}</button>
                                     )
                                 })}
                             </div>

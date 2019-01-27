@@ -44,7 +44,7 @@ function LoadSettingsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadIndexPage} info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<SettingsPage/>, document.getElementById('body'));
-    ReactDOM.render(<Footer next={window.LoadSelectionPage}/>, document.getElementById('footer'));
+    ReactDOM.render(<Footer next={window.LoadSelectionPage} button={"next"}/>, document.getElementById('footer'));
     getSettingsValues();
     demoSettings();
 }
@@ -56,7 +56,7 @@ function LoadSelectionPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
     ReactDOM.render(<SelectionPage/>, document.getElementById('body'));
-    ReactDOM.render(<Footer next={window.LoadGamePage}/>, document.getElementById('footer'));
+    ReactDOM.render(<Footer next={window.LoadGamePage} button={"play"}/>, document.getElementById('footer'));
     selectionPageLoaded();
 }
 
@@ -67,7 +67,7 @@ function LoadGamePage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSelectionPage}/>, document.getElementById('top'));
-    ReactDOM.render(<Footer next={window.LoadResultsPage}/>, document.getElementById('footer') );
+    ReactDOM.render(<Footer next={window.LoadResultsPage} button={"next"}/>, document.getElementById('footer') );
     ReactDOM.render(<GamePage />, document.getElementById('body') );
     StartGame();
     LoadKeyboard();
@@ -143,5 +143,5 @@ function LoadKeyboard() {
         }
 	}
 }
-window.version = "0.9.0.5";
+window.version = "0.9.17.0";
 window.onload = LoadIndexPage();

@@ -220,9 +220,6 @@ class SelectionPage extends React.Component {
                 <div className="container-fluid" id="select">
 
                             <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
                                 </div>
@@ -243,12 +240,12 @@ class SelectionPage extends React.Component {
                                 </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button chosen" readOnly></button>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
                                 </div>
@@ -269,12 +266,12 @@ class SelectionPage extends React.Component {
                                 </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button chosen" readOnly></button>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
                                 </div>
@@ -295,12 +292,12 @@ class SelectionPage extends React.Component {
                                 </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button chosen" readOnly></button>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
                                 </div>
@@ -321,12 +318,12 @@ class SelectionPage extends React.Component {
                                 </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button chosen" readOnly></button>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
                                 </div>
@@ -347,6 +344,9 @@ class SelectionPage extends React.Component {
                                 </div>
                                 <div className="col-xs-2 col-sm-1 col-md-1 text-center">
                                     <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
+                                </div>
+                                <div className="col-xs-3 col-sm-2 col-md-2 ">
+                                    <button className="word-button chosen" readOnly></button>
                                 </div>
                             </div>
                     </div>

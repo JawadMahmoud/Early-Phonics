@@ -37,18 +37,22 @@ function chooseWordList() {
     if (document.getElementById('words_input').checked) {
         wordlist = ['bag', 'bed', 'bin', 'box', 'can', 'cap', 'cat', 'dog', 'fan', 'fox', 'hat', 'hen', 'jam', 'jug', 'leg', 'man', 'map', 'men', 'mug', 'net', 'pan', 'peg', 'pen', 'pig', 'rat', 'red', 'sun', 'tap', 'ten', 'van', 'web', 'zip'];
         setCookie("GameTypeCookie","words_input",2);
+        $("#activity_info").html("(CVC words)");
 
     } else if (document.getElementById('blends_input').checked) {
         wordlist = ['ant', 'belt', 'brush', 'bulb', 'clap', 'crab', 'desk', 'drum', 'fist', 'flag', 'flask', 'frog', 'gift', 'golf', 'green', 'hand', 'lamp', 'milk', 'nest', 'plug', 'pram', 'raft', 'shelf', 'spoon', 'stamp', 'stop', 'string', 'swim', 'swing', 'tent', 'tree'];
         setCookie("GameTypeCookie","blends_input",2);
+        $("#activity_info").html("(words with adjacent consonants)");
 
     } else if (document.getElementById('digraphs_input').checked) {
         wordlist = ['bath', 'bee', 'book', 'boot', 'chin', 'cook', 'feet', 'fish', 'food', 'foot', 'good', 'heel', 'hood', 'hoof', 'hook', 'jeep', 'king', 'loop', 'moon', 'path', 'peek', 'peel', 'pool', 'queen', 'ring', 'roof', 'ship', 'string', 'swing', 'weed', 'wood', 'wool'];
         setCookie("GameTypeCookie","digraphs_input",2);
+        $("#activity_info").html("(ee, oo, th, ch, sh, ng)");
 
     } else if (document.getElementById('moredigraphs_input').checked) {
-        wordlist = ['car', 'chair', 'chick', 'cloud', 'coat', 'coin', 'cue', 'dart', 'egg', 'fork', 'goat', 'hair', 'horn', 'ill', 'jar', 'kerb', 'mouth', 'nail', 'oil', 'pie', 'pink', 'rain', 'road', 'shark', 'shell', 'snail', 'sock', 'star', 'tail', 'tank', 'tie', 'train'];
+        wordlist = ['car', 'chain', 'chick', 'cloud', 'coat', 'coin', 'cue', 'dart', 'egg', 'fork', 'goat', 'hair', 'horn', 'ill', 'jar', 'kerb', 'mouth', 'nail', 'oil', 'pie', 'pink', 'rain', 'road', 'shark', 'shell', 'snail', 'sock', 'star', 'tail', 'tank', 'tie', 'train'];
         setCookie("GameTypeCookie","moredigraphs_input",2);
+        $("#activity_info").html("(other digraphs)");
 
     } else {
         wordlist = [''];

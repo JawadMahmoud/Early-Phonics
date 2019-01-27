@@ -20,10 +20,10 @@ class GamePage extends React.Component{
                 <div className="row">
                     <div className="col-xs-4 col-sm-3 col-md-3 text-center">
                         {/* /<!-- <div className="mx-auto" style="width: 200px"> --> */}
-                        <p id="spell-text" style={{"fontSize":"2vw"}}>
+                        <p id="spell-text" style={{"fontSize":"1.5vw"}}>
                             Spell the word...
                         </p>
-                        <p id="word-text" style={{"fontSize":"2.5vw","text-decoration":"underline"}}></p>
+                        <p id="word-text" style={{"fontSize":"3vw","text-decoration":"underline"}}></p>
                         <img className="spell-word zeroRow" id="spell-word" src="resources/icons/ear.svg" onClick={this.repeatAudio}></img>
                         <audio id="word-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
                         <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>

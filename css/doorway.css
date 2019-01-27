@@ -90,8 +90,9 @@ button.keyboard-key {
 }
 
 button.keyboard-key.res {
-    height: 2.5em;
-    font-size: 2.5vw;
+    height: 3em;
+    font-size: 3vw;
+    width: 3.5em;
 }
 
 button.keyboard-key:hover {
@@ -178,7 +179,7 @@ img#check-button {
 #keyboard_res {
     position: fixed;
     bottom: 1em;
-    left: 30.25%;
+    left: 23.65%;
 }
 
 .twelve.columns {
@@ -598,7 +599,7 @@ input.two_divs_check[type="checkbox"] {
     position: absolute;
     height: 1.85em;
     width: 5em;
-    right: 0;
+    right: 1.25em;
     bottom: 0.25em;
 
 }
@@ -634,4 +635,8 @@ table#resultsTable1 th , table#resultsTable1 tr, table#resultsTable1 td, table#r
     /* background-color: cornflowerblue; */
     /* border-color: cornflowerblue; */
     border: 3px solid cornflowerblue;
+}
+
+#word-text {
+    text-decoration-color: lightgray;
 }

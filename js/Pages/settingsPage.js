@@ -41,6 +41,9 @@ class SettingsPage extends React.Component {
                                            className="user_options_radio button_div">First Blends</label>
 
                                 </td>
+                                <td>
+                                    <p id="activity_info" style={{textAlign: "right"}}>(CVC Words)</p>
+                                </td>
                         
                             </tr>
                             </tbody>
