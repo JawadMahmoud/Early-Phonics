@@ -149,5 +149,5 @@ function LoadKeyboard() {
     }
 }
 
-window.version = "0.9.65.0";
+window.version = "0.9.67.0";
 window.onload = LoadIndexPage();

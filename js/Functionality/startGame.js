@@ -129,7 +129,14 @@ function StartGame(tries, tryCounter) {
 
     }
 
-    if($("#write").is(":focus")  && detectmob()) {
-        $(".keyboard").hide();
-    }
+    // document.getElementById("write").onfocus = function() {
+    //     $(".keyboard").hide();
+    // };
+
+    $("#write").focus(function() {
+        if (detectmob()) {$(".keyboard").hide()};
+    })
+    $("#write").focusout(function() {
+        if (detectmob()) {$(".keyboard").show()};
+    })
 }
