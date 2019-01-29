@@ -662,3 +662,7 @@ table#resultsTable1 th , table#resultsTable1 tr, table#resultsTable1 td, table#r
     text-decoration-color: lightgray;
     -moz-text-decoration-color: lightgray;
 }
+
+.col-4 {
+    width: calc((100vw / 13 ) - 1vw);
+}

@@ -21,7 +21,7 @@ class GamePage extends React.Component {
                 <h1 className="title_message" style={{color: "white"}}>Play</h1>
 
                 <div className="row">
-                    <div className="col-xs-4 col-sm-3 col-md-3 text-center">
+                    <div className="col-4 col-xs-4 col-sm-3 col-md-3 text-center">
                         <p id="spell-text" style={{"fontSize": "1.5vw"}}>
                             Spell the word...
                         </p>
@@ -33,7 +33,7 @@ class GamePage extends React.Component {
                                muted={!audioEnabled}></audio>
                     </div>
 
-                    <div className="col-xs-9 col-sm-6 col-md-6">
+                    <div className="col-4 col-xs-9 col-sm-6 col-md-6">
                         <div className="mx-auto" style={{width: "auto", height: "12em"}}>
 
                             <img id="img-random" className="guess_pic" src="resources/images/zip.svg" height="100%"/>
@@ -41,7 +41,7 @@ class GamePage extends React.Component {
                         </div>
                     </div>
 
-                    <div className="col-xs-4 col-sm-3 col-md-3">
+                    <div className="col-4 col-xs-4 col-sm-3 col-md-3">
                         <div className="container-fluid">
                             <div className="row">
                                 <div id="text-place">

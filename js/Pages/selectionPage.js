@@ -14,7 +14,7 @@ class SelectionPage extends React.Component {
                                          aria-labelledby={val + "-tab"}>
                                 <div className="row">
                                     {Array.from(new Array(6), (val, index) => index + 1).map(function (val) {
-                                        return (<div className="col-xs-3 col-sm-2 col-md-2">
+                                        return (<div className="col-2 col-xs-3 col-sm-2 col-md-2">
                                             {(val == 1 || val == 6) ? "" : Array(4).fill(0).map(function () {
                                                 return (
                                                     <button className="word-button"></button>);
