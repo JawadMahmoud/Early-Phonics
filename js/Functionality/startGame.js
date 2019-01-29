@@ -130,6 +130,6 @@ function StartGame(tries, tryCounter) {
     }
 
     if($("#write").is(":focus")  && detectmob()) {
-        $("#keyboard").hide();
+        $(".keyboard").hide();
     }
 }
