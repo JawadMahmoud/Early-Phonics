@@ -61,7 +61,7 @@ function chooseWordList() {
     }
 
     sessionStorage.setItem("wordlist", wordlist);
-};
+}
 
 function getSettingsValues() {
 
@@ -108,10 +108,8 @@ function getSettingsValues() {
     if(game_type_cookie !== "") {
         $("#"+game_type_cookie).prop('checked',true);
         chooseWordList();
-        console.log("Yes Cookie choose word list");
     } else {
         chooseWordList();
-        console.log("No Cookie choose word list");
     }
 
 }
@@ -215,8 +213,6 @@ function demoSettings() {
             coloured_keys = false;
         }
     });
-
-    $("#dwInfoButton").show();
 
 
     //if there is a click on to indicate change of game/activity type

@@ -28,16 +28,19 @@ class CopyrightPage extends React.Component {
                                 <ul>
                                     <p className="info_text" style={{fontSize: "1vw"}}>Original Concept:</p>
                                     <p style={{fontSize: "2vw"}}>Philip Whittaker</p>
-                                    <p className="info_text" style={{fontSize: "1vw"}}>Original Design and Implementation in RISC OS:</p>
+                                    <p className="info_text" style={{fontSize: "1vw"}}>Original Design and
+                                        Implementation in RISC OS:</p>
                                     <p style={{fontSize: "2vw"}}>Andrew Burt</p>
                                 </ul>
                             </td>
                             <td></td>
                             <td>
                                 <ul>
-                                    <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in Flash:</p>
+                                    <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in
+                                        Flash:</p>
                                     <p style={{fontSize: "2vw"}}>Thomas Whitlee</p>
-                                    <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in HTML5:</p>
+                                    <p className="info_text" style={{fontSize: "1vw"}}>Redesign and implementation in
+                                        HTML5:</p>
                                     <p style={{fontSize: "1.25vw"}}>University of Glasgow students</p>
                                     <p style={{fontSize: "1.5vw"}}>Ivelina Doynova, Jan Paralic,</p>
                                     <p style={{fontSize: "1.5vw"}}>Jawad Mahmoud, Matus Gallik</p>
@@ -68,17 +71,12 @@ class CopyrightPage extends React.Component {
                     </table>
                 </div>
 
-
                 <div className="version_number"><p>version {window.version}</p></div>
                 <div id="dwNavigationFooter" style={{height: "1.25em", width: "10em"}}>
                     <button class="main_button" style={{fontSize: "1.5vw"}} onClick={this.show_words}>Wordlists</button>
                     <button class="main_button" style={{fontSize: "1.5vw"}} onClick={this.show_info}>Play</button>
                 </div>
-
-
             </div>
-
-
         );
     }
 }

@@ -1,36 +1,37 @@
-class GamePage extends React.Component{
+class GamePage extends React.Component {
     constructor(props) {
         super(props);
     }
-    repeatAudio(){
+
+    repeatAudio() {
         document.getElementById("word-audio").play();
     }
+
     inputBoxKeyUp(event) {
-        if(event.keyCode==13 || event.key == 13 || event.keyIdentifier == 13) {
+        if (event.keyCode == 13) {
             $("#check-button").click();
         }
     }
-    render(){
-        const audioEnabled = (getCookie("audioEnabled")==='1');
+
+    render() {
+        const audioEnabled = (getCookie("audioEnabled") === '1');
         const colourless = this.props.colourless;
-        return(
+        return (
             <div className="user_options">
                 <h1 className="title_message" style={{color: "white"}}>Play</h1>
 
                 <div className="row">
                     <div className="col-xs-4 col-sm-3 col-md-3 text-center">
-                        {/* /<!-- <div className="mx-auto" style="width: 200px"> --> */}
-                        <p id="spell-text" style={{"fontSize":"1.5vw"}}>
+                        <p id="spell-text" style={{"fontSize": "1.5vw"}}>
                             Spell the word...
                         </p>
-                        <p id="word-text" style={{"fontSize":"3vw","text-decoration":"underline"}}></p>
-                        <img className="spell-word zeroRow" id="spell-word" src="resources/icons/ear.svg" onClick={this.repeatAudio}></img>
+                        <p id="word-text" style={{"fontSize": "4vw", "text-decoration": "underline"}}></p>
+                        <img className="spell-word zeroRow" id="spell-word" src="resources/icons/ear.svg"
+                             onClick={this.repeatAudio}/>
                         <audio id="word-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
-                        <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false} muted={!audioEnabled}></audio>
-                        {/* <!-- </div> --> */}
+                        <audio src="resources/sounds/correct.mp3" id="correct-audio" autoPlay={false} loop={false}
+                               muted={!audioEnabled}></audio>
                     </div>
-
-
 
                     <div className="col-xs-9 col-sm-6 col-md-6">
                         <div className="mx-auto" style={{width: "auto", height: "12em"}}>
@@ -44,13 +45,18 @@ class GamePage extends React.Component{
                         <div className="container-fluid">
                             <div className="row">
                                 <div id="text-place">
-                                    {/* <!--<textarea id="write" maxlength="10" cols="20"></textarea>--> */}
-                                    <input id="write" onKeyUp={this.inputBoxKeyUp} type="text" placeholder="answer" maxLength="6" style={{"fontSize":"3vw", width:"5em", borderRadius:"10px", paddingLeft: "15px"}}></input>
+                                    <input id="write" onKeyUp={this.inputBoxKeyUp} type="text" placeholder="answer"
+                                           maxLength="6" style={{
+                                        "fontSize": "4vw",
+                                        width: "5em",
+                                        borderRadius: "10px",
+                                        paddingLeft: "15px"
+                                    }}/>
                                 </div>
                             </div>
                             <div className="row">
-                                <div id="check-button"  className = "zeroRow">
-                                    <img alt="check-button" id="check-button" src="resources/icons/checkbox.svg"/>
+                                <div id="check-button">
+                                    <img alt="check-button" id="check-button" src="resources/icons/checkbox.svg" className="zeroRow"/>
                                 </div>
                             </div>
                         </div>
@@ -60,13 +66,9 @@ class GamePage extends React.Component{
                     <p className="instruction_message">Well Done!</p>
                 </div>
 
-
                 <div className="version_number"><p>version {window.version}</p></div>
                 <div id={"modal"}></div>
             </div>
-
-
         );
     }
-
 }

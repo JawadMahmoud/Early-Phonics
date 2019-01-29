@@ -1,18 +1,18 @@
 function getKeys() {
 
-    var letters = sessionStorage.getItem("currentImage")
-    var alphabets = "abcdefghijklmnopqrstuvwxyz"
+    var letters = sessionStorage.getItem("currentImage");
+    var alphabets = "abcdefghijklmnopqrstuvwxyz";
     var unique = letters.split('').filter(function (item, i, ar) {
         return ar.indexOf(item) === i;
     });
-    var chosen = []
+    var chosen = [];
 
     for (i = 0; i < unique.length; i++) {
         chosen.push(unique[i]);
     }
 
     while (chosen.length < 8) {
-        var randomLetter = alphabets.charAt(Math.floor(Math.random() * alphabets.length))
+        var randomLetter = alphabets.charAt(Math.floor(Math.random() * alphabets.length));
         if (!duplicate(randomLetter, chosen)) {
             chosen.push(randomLetter);
         }

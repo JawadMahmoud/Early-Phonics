@@ -21,7 +21,7 @@ function selectionPageLoaded() {
         choices = generateWords(5, wordlist);
         sessionStorage.setItem("choices", choices); //store choices for future use
         document.getElementById("nextBtn").hidden = false;
-        onLoad(choices, '#select', 'button');
+        onLoad(choices, '#select', 'input');
         $('#pills-home , #pills-profile, #pills-profile2, #pills-profile3, #pills-profile4').find('button').prop('disabled', false);
     });
 
@@ -30,7 +30,7 @@ function selectionPageLoaded() {
         choices = generateWords(10, wordlist);
         sessionStorage.setItem("choices", choices);
         document.getElementById("nextBtn").hidden = false;
-        onLoad(choices, '#select', 'button');
+        onLoad(choices, '#select', 'input');
         $('#pills-home , #pills-profile, #pills-profile2, #pills-profile3, #pills-profile4').find('button').prop('disabled', false);
     });
 
@@ -39,7 +39,7 @@ function selectionPageLoaded() {
         choices = generateWords(20, wordlist);
         sessionStorage.setItem("choices", choices);
         document.getElementById("nextBtn").hidden = false;
-        onLoad(choices, '#select', 'button');
+        onLoad(choices, '#select', 'input');
         $('#pills-home , #pills-profile, #pills-profile2, #pills-profile3, #pills-profile4').find('button').prop('disabled', true);
     });
 
@@ -64,23 +64,23 @@ function selectionPageLoaded() {
             }
         }
 
-        onLoad(choices, '#select', 'button');
+        onLoad(choices, '#select', 'input');
 
     });
 
 
     //remove
     var i = 0;
-    $('#select').find('a').each(function () {
+    $('#select').find('input').each(function () {
         //function to get the id of the word to remove
         $('#pills-home , #pills-profile, #pills-profile2, #pills-profile3, #pills-profile4').find('button').prop('disabled', false);
         $(this).attr("id", i);
         i = i + 1;
     });
 
-    $('#select').find('a').click(function () {
+    $('#select').find('input').click(function () {
         choices.splice($(this).attr("id"), 1);
-        onLoad(choices, '#select', 'button');
+        onLoad(choices, '#select', 'input');
         $('#pills-home , #pills-profile, #pills-profile2, #pills-profile3, #pills-profile4').find('button').prop('disabled', false);
         sessionStorage.setItem("choices", choices);
         if (choices.length == 0) {
@@ -88,7 +88,21 @@ function selectionPageLoaded() {
         }
     });
 
-};
+    $(".word-button.chosen").on("mousedown", function (e) {
+        e.preventDefault();
+        $(this).addClass("removeWord");
+    }).on("mouseup", function () {
+        $(this).removeClass("removeWord");
+    });
+
+    $(".word-button").on("mousedown", function (e) {
+        e.preventDefault();
+        $(this).addClass("selectWord");
+    }).on("mouseup", function () {
+        $(this).removeClass("selectWord");
+    });
+
+}
 
 function generateWords(amount, wordlist) {
     var out = [];

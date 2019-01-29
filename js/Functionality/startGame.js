@@ -1,3 +1,19 @@
+function detectmob() { 
+    if( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+    ){
+       return true;
+     }
+    else {
+       return false;
+     }
+   }
+
 function StartGame(tries, tryCounter) {
     //disable next button
     document.getElementById("nextBtn").hidden = true;
@@ -41,6 +57,8 @@ function StartGame(tries, tryCounter) {
 
     if (getCookie("InputCookie") == "learning") {
         document.getElementById("word-text").innerHTML = currentImage;
+    } else {
+        $("#spell-word").css("margin-top","2.75em");
     }
 
     
@@ -110,4 +128,8 @@ function StartGame(tries, tryCounter) {
         }
 
     }
-};
+
+    if($("#write").is(":focus")  && detectmob()) {
+        $("#keyboard").hide();
+    }
+}

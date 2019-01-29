@@ -17,26 +17,26 @@ class SettingsPage extends React.Component {
                         <h3 className="options_group_title">Activity</h3>
                         <table className="options_layout_grid" width="100%">
                             <tbody>
-                            <tr className="options_labels" >
+                            <tr className="options_labels">
                                 <td style={{textAlign: "left"}} id="game_type">
                                     <input type="radio" id="words_input" name="activity" value="words"
                                            className="activity_mode"
-                                           defaultChecked></input>
-                                    <label  htmlFor="words_input"
+                                           defaultChecked/>
+                                    <label htmlFor="words_input"
                                            className="user_options_radio button_div">First Words</label>
 
                                     <input type="radio" id="digraphs_input" name="activity" value="digraph"
-                                           className="activity_mode"></input>
+                                           className="activity_mode"/>
                                     <label htmlFor="digraphs_input"
                                            className="user_options_radio button_div">First Digraphs</label>
 
                                     <input type="radio" id="moredigraphs_input" name="activity" value="moredigraph"
-                                           className="activity_mode"></input>
-                                    <label  htmlFor="moredigraphs_input"
+                                           className="activity_mode"/>
+                                    <label htmlFor="moredigraphs_input"
                                            className="user_options_radio button_div">More Digraphs</label>
 
                                     <input type="radio" id="blends_input" name="activity" value="blends"
-                                           className="activity_mode"></input>
+                                           className="activity_mode"/>
                                     <label htmlFor="blends_input"
                                            className="user_options_radio button_div">First Blends</label>
 
@@ -44,7 +44,7 @@ class SettingsPage extends React.Component {
                                 <td>
                                     <p id="activity_info" style={{textAlign: "right"}}>(CVC Words)</p>
                                 </td>
-                        
+
                             </tr>
                             </tbody>
                         </table>
@@ -58,12 +58,12 @@ class SettingsPage extends React.Component {
                                 <td style={{textAlign: "left"}}>
                                     <input type="radio" id="testing_input" name="mode" value="testing"
                                            className="input_mode"
-                                           defaultChecked onClick={changeInfoTextKeyboard(this.value)}></input>
+                                           defaultChecked onClick={changeInfoTextKeyboard(this.value)}/>
                                     <label htmlFor="testing_input"
                                            className="user_options_radio button_div">Assessment</label>
 
                                     <input type="radio" id="learning_input" name="mode" value="learning"
-                                           className="input_mode" onClick={changeInfoTextKeyboard(this.value)}></input>
+                                           className="input_mode" onClick={changeInfoTextKeyboard(this.value)}/>
                                     <label htmlFor="learning_input"
                                            className="user_options_radio button_div">Learning</label>
 
@@ -86,12 +86,12 @@ class SettingsPage extends React.Component {
                                 <td style={{textAlign: "left"}}>
                                     <input type="radio" id="standard_input" name="keyboard" value="standard"
                                            className="keyboard_mode"
-                                           defaultChecked></input>
+                                           defaultChecked/>
                                     <label htmlFor="standard_input"
                                            className="user_options_radio button_div">Standard</label>
 
                                     <input type="radio" id="restricted_input" name="keyboard" value="restricted"
-                                           className="keyboard_mode"></input>
+                                           className="keyboard_mode"/>
                                     <label htmlFor="restricted_input"
                                            className="user_options_radio button_div">Restricted</label>
 
@@ -124,7 +124,7 @@ class SettingsPage extends React.Component {
                                 <td></td>
                                 <td>
                                     <div className="switch_num_div">
-                                        <p>Swtiches</p>
+                                        <p>Switches</p>
                                     </div>
                                 </td>
                                 <td></td>
@@ -138,34 +138,38 @@ class SettingsPage extends React.Component {
                             <tr className="options_buttons">
                                 <td>
                                     <div className="colour_key_div">
-                                    <input type="radio" name="enable_colours" value="true" id="colour-keys-on" className="colour_mode"></input>
-                                    <label htmlFor="colour-keys-on" className="user_options_radio button_div">On</label>
-                                    <input type="radio" name="enable_colours" value="false" id="colour-keys-off" className="colour_mode" defaultChecked></input>
-                                    <label htmlFor="colour-keys-off" className="user_options_radio button_div">Off</label>
+                                        <input type="radio" name="enable_colours" value="true" id="colour-keys-on"
+                                               className="colour_mode"/>
+                                        <label htmlFor="colour-keys-on"
+                                               className="user_options_radio button_div">On</label>
+                                        <input type="radio" name="enable_colours" value="false" id="colour-keys-off"
+                                               className="colour_mode" defaultChecked/>
+                                        <label htmlFor="colour-keys-off"
+                                               className="user_options_radio button_div">Off</label>
                                     </div>
                                 </td>
                                 <td></td>
                                 <td></td>
                                 <td id="scanner">
                                     <input type="radio" name="enable_scanning" value="true" id="radio-scanning-on"
-                                           className="switch_mode"></input>
+                                           className="switch_mode"/>
                                     <label htmlFor="radio-scanning-on"
                                            className="user_options_radio button_div">On</label>
                                     <input type="radio" name="enable_scanning" value="false" id="radio-scanning-off"
-                                           className="switch_mode" defaultChecked></input>
+                                           className="switch_mode" defaultChecked/>
                                     <label htmlFor="radio-scanning-off"
                                            className="user_options_radio button_div">Off</label>
                                 </td>
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <div className="switch_num_div"  id="switch_amount">
+                                    <div className="switch_num_div" id="switch_amount">
                                         <input type="radio" name="num_switches" value="1" id="radio-switches-1"
-                                               className="switch_number"></input>
+                                               className="switch_number"/>
                                         <label htmlFor="radio-switches-1"
                                                className="user_options_radio button_div">One</label>
                                         <input type="radio" name="num_switches" value="2" id="radio-switches-2"
-                                               className="switch_number"></input>
+                                               className="switch_number"/>
                                         <label htmlFor="radio-switches-2"
                                                className="user_options_radio button_div">Two</label>
                                     </div>
@@ -173,17 +177,17 @@ class SettingsPage extends React.Component {
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <div className="switch_time_div"  id="oneSwitchTime">
+                                    <div className="switch_time_div" id="oneSwitchTime">
                                         <input type="radio" name="time_switches" value="1s" id="time-switches-1"
-                                               className="switch_time"></input>
+                                               className="switch_time"/>
                                         <label htmlFor="time-switches-1"
                                                className="user_options_radio button_div">1s</label>
                                         <input type="radio" name="time_switches" value="2s" id="time-switches-2"
-                                               className="switch_time"></input>
+                                               className="switch_time"/>
                                         <label htmlFor="time-switches-2"
                                                className="user_options_radio button_div">2s</label>
                                         <input type="radio" name="time_switches" value="3s" id="time-switches-3"
-                                               className="switch_time"></input>
+                                               className="switch_time"/>
                                         <label htmlFor="time-switches-3"
                                                className="user_options_radio button_div">3s</label>
                                     </div>
@@ -198,15 +202,10 @@ class SettingsPage extends React.Component {
 
                 </div>
 
-
             </form>
-
-
-
 
             // @TODO
             // <!-- IMPORT SCRIPTS AS ON THE OLD FILE -->
-
 
         );
     }

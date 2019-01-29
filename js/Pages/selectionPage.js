@@ -7,176 +7,23 @@ class SelectionPage extends React.Component {
                 <div className="container-fluid">
 
                     <div className="tab-content" id="pills-tabContent">
-                        <div className="tab-pane fade show active" id="pills-home" role="tabpanel"
-                             aria-labelledby="pills-home-tab">
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
+                        {["pills-home", "pills-profile"].map(function (val) {
+                            const isHome = val === "pills-home";
+                            const className = isHome ? "show active" : "";
+                            return (<div className={"tab-pane fade " + className} id={val} role="tabpanel"
+                                         aria-labelledby={val + "-tab"}>
+                                <div className="row">
+                                    {Array.from(new Array(6), (val, index) => index + 1).map(function (val) {
+                                        return (<div className="col-xs-3 col-sm-2 col-md-2">
+                                            {(val == 1 || val == 6) ? "" : Array(4).fill(0).map(function () {
+                                                return (
+                                                    <button className="word-button"></button>);
+                                            })}
+                                        </div>);
+                                    })}
                                 </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div className="tab-pane fade" id="pills-profile" role="tabpanel"
-                             aria-labelledby="pills-profile-tab">
-
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button"></button>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    
-                                </div>
-                            </div>
-                        </div>
-
+                            </div>);
+                        })}
                     </div>
 
                     <p></p>
@@ -202,14 +49,14 @@ class SelectionPage extends React.Component {
                         <tr className="text-center">
                             <td>
                                 <label className="user_options_radio button_div" id="option1">
-                                    <input type="radio" name="options" autoComplete="off" defaultChecked></input> Any 5
+                                    <input type="radio" name="options" autoComplete="off" defaultChecked/> Any 5
                                     Words
                                 </label>
                                 <label className="user_options_radio button_div" id="option3">
-                                    <input type="radio" name="options" autoComplete="off"></input> Any 10 Words
+                                    <input type="radio" name="options" autoComplete="off"/> Any 10 Words
                                 </label>
                                 <label className="user_options_radio button_div" id="option2">
-                                    <input type="radio" name="options" autoComplete="off"></input> Any 20 Words
+                                    <input type="radio" name="options" autoComplete="off"/> Any 20 Words
                                 </label>
                             </td>
                         </tr>
@@ -217,145 +64,28 @@ class SelectionPage extends React.Component {
                     </table>
                 </div>
 
-                <div className="container-fluid" id="select">
-
-                            <div className="row">
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                                <div className="col-xs-2 col-sm-1 col-md-1 text-center">
-                                    <a><img src="resources/icons/red_cross.svg" className="cancel_cross"></img></a>
-                                </div>
-                                <div className="col-xs-3 col-sm-2 col-md-2 ">
-                                    <button className="word-button chosen" readOnly></button>
-                                </div>
-                            </div>
+                <div className="container" id="select">
+                    <div className="row">
+                        {Array(4).fill(0).map(function () {
+                            return (<div className="col-xs-4 col-sm-3 col-md-3">
+                                {Array(5).fill(0).map(function () {
+                                    return (<div className="row">
+                                        {/* <div className="col" style={{textAlign:"right"}}>
+                                            <a><img src="resources/icons/red_cross.svg" className="cancel_cross"/></a>
+                                        </div> */}
+                                        <div className="col">
+                                            <input type="text" className="word-button chosen text-center" readOnly/>
+                                        </div>
+                                    </div>);
+                                })}
+                            </div>);
+                        })}
                     </div>
+                </div>
 
                 <div className="version_number"><p>version {window.version}</p></div>
 
             </div>
-
-
         );
     }
 }

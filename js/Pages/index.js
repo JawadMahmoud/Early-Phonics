@@ -6,7 +6,7 @@ class IndexPage extends React.Component {
                     <h1 className="title_message">
                         <div className="doorway_logo">
                             <a href="http://www.doorwayonline.org.uk/">
-                                <img src="resources\icons\doorwayLogo.svg"></img>
+                                <img src="resources\icons\doorwayLogo.svg"/>
                             </a>
                         </div>
                     </h1>
@@ -42,7 +42,8 @@ function LoadSettingsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBar back={window.LoadIndexPage} info={window.LoadInfoPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar showInfo={true} back={window.LoadIndexPage}
+                            info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<SettingsPage/>, document.getElementById('body'));
     ReactDOM.render(<Footer next={window.LoadSelectionPage} button={"next"}/>, document.getElementById('footer'));
     getSettingsValues();
@@ -67,12 +68,12 @@ function LoadGamePage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSelectionPage}/>, document.getElementById('top'));
-    ReactDOM.render(<Footer next={window.LoadResultsPage} button={"next"}/>, document.getElementById('footer') );
-    ReactDOM.render(<GamePage />, document.getElementById('body') );
+    ReactDOM.render(<Footer next={window.LoadResultsPage} button={"next"}/>, document.getElementById('footer'));
+    ReactDOM.render(<GamePage/>, document.getElementById('body'));
     StartGame();
     LoadKeyboard();
     startScanning();
-	
+
 
 }
 
@@ -84,7 +85,7 @@ function LoadResultsPage() {
     ReactDOM.render(<TopBar back={window.LoadSelectionPage}/>, document.getElementById('top'));
     ReactDOM.render(<ResultsPage restart={window.LoadIndexPage}/>, document.getElementById('body'));
 
-	LoadResults();
+    LoadResults();
 
 }
 
@@ -93,7 +94,7 @@ function LoadIndexPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('body'));
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
-    ReactDOM.render(<TopBarIndex info={window.LoadInfoPage}/>, document.getElementById('top'));
+    ReactDOM.render(<TopBar showInfo={true} index={true} info={window.LoadInfoPage}/>, document.getElementById('top'));
     ReactDOM.render(<IndexPage/>, document.getElementById('body'));
     Resizing();
 };
@@ -104,7 +105,8 @@ function LoadInfoPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
-    ReactDOM.render(<InfoPage copy={window.LoadCopyrightPage} words={window.LoadWordsPage}/>, document.getElementById('body'));
+    ReactDOM.render(<InfoPage copy={window.LoadCopyrightPage}
+                              words={window.LoadWordsPage}/>, document.getElementById('body'));
 }
 
 function LoadCopyrightPage() {
@@ -113,7 +115,8 @@ function LoadCopyrightPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
-    ReactDOM.render(<CopyrightPage info={window.LoadInfoPage} words={window.LoadWordsPage}/>, document.getElementById('body'));
+    ReactDOM.render(<CopyrightPage info={window.LoadInfoPage}
+                                   words={window.LoadWordsPage}/>, document.getElementById('body'));
 }
 
 function LoadWordsPage() {
@@ -122,26 +125,29 @@ function LoadWordsPage() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     ReactDOM.unmountComponentAtNode(document.getElementById('footer'));
     ReactDOM.render(<TopBar back={window.LoadSettingsPage}/>, document.getElementById('top'));
-    ReactDOM.render(<WordsPage info={window.LoadInfoPage} copy={window.LoadCopyrightPage}/>, document.getElementById('body'));
+    ReactDOM.render(<WordsPage info={window.LoadInfoPage}
+                               copy={window.LoadCopyrightPage}/>, document.getElementById('body'));
 }
 
 function LoadKeyboard() {
     ReactDOM.unmountComponentAtNode(document.getElementById('keyboard_render'));
     if (keyboard_select == "restricted") {
         getKeys();
-		if(coloured_keys) {
-			ReactDOM.render(<Keyboard restricted={true} unicolor={false} />, document.getElementById('keyboard_render') );
-		} else {
-			ReactDOM.render(<Keyboard restricted={true} unicolor={true} />, document.getElementById('keyboard_render') );
+        if (coloured_keys) {
+            ReactDOM.render(<Keyboard restricted={true} unicolor={false}/>, document.getElementById('keyboard_render'));
+        } else {
+            ReactDOM.render(<Keyboard restricted={true} unicolor={true}/>, document.getElementById('keyboard_render'));
         }
-		
-	} else if (keyboard_select == "standard") {
-		if(coloured_keys) {
-			ReactDOM.render(<Keyboard restricted={false} unicolor={false} />, document.getElementById('keyboard_render') );
-		} else {
-			ReactDOM.render(<Keyboard restricted={false} unicolor={true} />, document.getElementById('keyboard_render') );
+
+    } else if (keyboard_select == "standard") {
+        if (coloured_keys) {
+            ReactDOM.render(<Keyboard restricted={false}
+                                      unicolor={false}/>, document.getElementById('keyboard_render'));
+        } else {
+            ReactDOM.render(<Keyboard restricted={false} unicolor={true}/>, document.getElementById('keyboard_render'));
         }
-	}
+    }
 }
-window.version = "0.9.17.0";
+
+window.version = "0.9.65.0";
 window.onload = LoadIndexPage();

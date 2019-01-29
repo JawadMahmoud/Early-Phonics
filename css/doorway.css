@@ -44,10 +44,25 @@ body {
     width: 100%;
 }
 
+.word-button.selectWord {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+}
+
 .word-button.chosen {
-    cursor: grab;
-    opacity: 0.75;
+    cursor: not-allowed;
+    opacity: 0.9;
     background-color: white;
+    color: darkslategrey;
+}
+
+.word-button.chosen:hover {
+    border-color: darkred;
+}
+
+.word-button.chosen.removeWord {
+    color: whitesmoke;
+    background-color: firebrick;
 }
 
 .nav-link.selection_pill_tabs.active {
@@ -75,7 +90,7 @@ body {
 /* game.css*/
 #spell-text {
     font-size: 2em;
-    padding-top: 3em;
+    padding-top: 4em;
 }
 
 #text-place {
@@ -84,15 +99,19 @@ body {
 
 button.keyboard-key {
     margin-right: 0.2em;
-    height: 1.9em;
-    font-size: 2vw;
+    height: 2.25em;
+    font-size: 2.5vw;
     width: 3em;
+    border: 2px solid cornflowerblue;
+    /* border-color: darkslategray; */
 }
 
 button.keyboard-key.res {
     height: 3em;
     font-size: 3vw;
     width: 3.5em;
+    border: 2px solid cornflowerblue;
+    /* border-color: darkslategray; */
 }
 
 button.keyboard-key:hover {
@@ -168,12 +187,13 @@ button.keyboard-key:hover {
 img#check-button {
     width: 4em;
     height: 3em;
+    margin-left: 90%;
 }
 
 #keyboard {
     position: fixed;
     bottom: 1em;
-    left: 15.25%;
+    left: 7%;
 }
 
 #keyboard_res {
@@ -634,9 +654,11 @@ table#resultsTable1 th , table#resultsTable1 tr, table#resultsTable1 td, table#r
 .selected {
     /* background-color: cornflowerblue; */
     /* border-color: cornflowerblue; */
-    border: 3px solid cornflowerblue;
+    /* border: 5px solid cornflowerblue; */
+    box-shadow: 0 0 0 0.2em gold;
 }
 
 #word-text {
     text-decoration-color: lightgray;
+    -moz-text-decoration-color: lightgray;
 }
