@@ -1,18 +1,12 @@
-function detectmob() { 
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)
-    ){
-       return true;
-     }
-    else {
-       return false;
-     }
-   }
+function isMobileDevice() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        console.log("Mobile Device");
+        return true;
+    } else {
+        console.log("Not Mobile Device");
+        return false;
+    }
+};
 
 function StartGame(tries, tryCounter) {
     //disable next button
@@ -132,11 +126,12 @@ function StartGame(tries, tryCounter) {
     // document.getElementById("write").onfocus = function() {
     //     $(".keyboard").hide();
     // };
+    isMobileDevice();
 
     $("#write").focus(function() {
-        if (detectmob()) {$(".keyboard").hide()};
+        if (isMobileDevice()) {$(".keyboard").hide()};
     })
     $("#write").focusout(function() {
-        if (detectmob()) {$(".keyboard").show()};
+        if (isMobileDevice()) {$(".keyboard").show()};
     })
 }
