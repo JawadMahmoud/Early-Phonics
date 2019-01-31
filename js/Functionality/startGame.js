@@ -62,7 +62,6 @@ function StartGame(tries, tryCounter) {
         inputToCheck = document.getElementById('write').value;
         //if is a hit
         if (inputToCheck == currentImage) {
-            //console.log('TRUE');
             document.getElementById('write').value = '';
             //increase Tries and Trycounter
             if (typeof tries[tryCounter] == 'undefined') {
@@ -77,7 +76,7 @@ function StartGame(tries, tryCounter) {
                 audioElement.removeEventListener("ended", audioOnEnded);
                 modalElement.innerHTML = "Correct!";
                 modalElement.style.display = "block";
-                const correctAudioOnEnded = function () {
+                var correctAudioOnEnded = function () {
                     modalElement.style.display = "none";
                     StartGame(tries, tryCounter);
                     LoadKeyboard();
@@ -94,7 +93,7 @@ function StartGame(tries, tryCounter) {
                 sessionStorage.setItem("tries", JSON.stringify(tries));
                 modalElement.innerHTML = "Correct!";
                 modalElement.style.display = "block";
-                const correctAudioOnEnded = function () {
+                var correctAudioOnEnded = function () {
                     modalElement.style.display = "none";
                     window.LoadResultsPage();
                     correctAudioElement.removeEventListener("ended", correctAudioOnEnded);
@@ -123,9 +122,6 @@ function StartGame(tries, tryCounter) {
 
     }
 
-    // document.getElementById("write").onfocus = function() {
-    //     $(".keyboard").hide();
-    // };
     isMobileDevice();
 
     $("#write").focus(function() {

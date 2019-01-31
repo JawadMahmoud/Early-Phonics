@@ -16,29 +16,21 @@ module.exports = function(grunt) {
         },
         dist: {
           files: {
-            'demo/Pages/copyrightPage.js': 'js/Pages/copyrightPage.js',
-            'demo/Pages/gamePage.js': 'js/Pages/gamePage.js',
-            'demo/Pages/index.js': 'js/Pages/index.js',
-            'demo/Pages/infoPage.js': 'js/Pages/infoPage.js',
-            'demo/Pages/keyboard.js': 'js/Pages/keyboard.js',
-            'demo/Pages/resultsPage.js': 'js/Pages/resultsPage.js',
-            'demo/Pages/selectionPage.js': 'js/Pages/selectionPage.js',
-            'demo/Pages/settingsPage.js': 'js/Pages/settingsPage.js',
-            'demo/Pages/wordsPage.js': 'js/Pages/wordsPage.js',
-            'demo/Surroundings/Footer.js': 'js/Surroundings/Footer.js',
-            'demo/Surroundings/TopBar.js': 'js/Surroundings/TopBar.js',
-            'demo/Surroundings/TopBarIndex.js': 'js/Surroundings/TopBarIndex.js',
+            'demo/temp/Pages/copyrightPage.js': 'js/Pages/copyrightPage.js',
+            'demo/temp/Pages/gamePage.js': 'js/Pages/gamePage.js',
+            'demo/temp/Pages/index.js': 'js/Pages/index.js',
+            'demo/temp/Pages/infoPage.js': 'js/Pages/infoPage.js',
+            'demo/temp/Pages/keyboard.js': 'js/Pages/keyboard.js',
+            'demo/temp/Pages/resultsPage.js': 'js/Pages/resultsPage.js',
+            'demo/temp/Pages/selectionPage.js': 'js/Pages/selectionPage.js',
+            'demo/temp/Pages/settingsPage.js': 'js/Pages/settingsPage.js',
+            'demo/temp/Pages/wordsPage.js': 'js/Pages/wordsPage.js',
+            'demo/temp/Surroundings/Footer.js': 'js/Surroundings/Footer.js',
+            'demo/temp/Surroundings/TopBar.js': 'js/Surroundings/TopBar.js',
           }
         }
       },
       concat: {
-        reacts: {
-          options: {
-            separator: ';',
-          },
-          src: ['demo/Pages/final/**', 'demo/Surroundings/final/**'],
-          dest: 'demo/early-phonics-r.js'
-        },
         functionality: {
           options: {
             separator: ';',
@@ -46,23 +38,34 @@ module.exports = function(grunt) {
           src: ['js/Functionality/cookies.js', 'js/Functionality/keyboardKeys.js', 'js/Functionality/loadResults.js', 'js/Functionality/onLoad.js',
           'js/Functionality/resize.js', 'js/Functionality/scanning.js', 'js/Functionality/selection.js', 'js/Functionality/settings.js',
           'js/Functionality/startGame.js'],
-          dest: 'demo/early-phonics-j.js'
+          dest: 'demo/js/early-phonics-f.js'
         },
-        both: {
-          options: {
-            separator: ';',
-          },
-          src: ['demo/early-phonics-r.js', 'demo/early-phonics-j.js'],
-          dest: 'demo/early-phonics.js'
-        }
       },
       uglify: {
         options: {
           banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
         },
-        dist: {
-          src: 'demo/early-phonics.js',
-          dest: 'demo/early-phonics.min.js'
+        functions: {
+          src: 'demo/js/early-phonics-f.js',
+          dest: 'demo/js/early-phonics.min.js'
+        },
+        pages: {
+          files: [{
+            expand: true,
+            cwd: 'demo/temp/Pages/',
+            src: ['*.js', '!*.min.js'],
+            dest: 'demo/js/Pages/',
+            ext: '.min.js'
+          }]
+        },
+        surroundings: {
+          files: [{
+            expand: true,
+            cwd: 'demo/temp/Surroundings/',
+            src: ['*.js', '!*.min.js'],
+            dest: 'demo/js/Surroundings/',
+            ext: '.min.js'
+          }]
         }
       },
       cssmin: {
@@ -71,11 +74,11 @@ module.exports = function(grunt) {
         },
         dist: {
           src: 'css/doorway.css',
-          dest: 'demo/early-phonics.min.css'
+          dest: 'demo/css/early-phonics.min.css'
         }
       },
       copy: {
-        main: {
+        resources: {
           files: [
             {expand: true, src: ['resources/**'], dest: 'demo/'},
           ]
@@ -87,24 +90,11 @@ module.exports = function(grunt) {
           dest: 'demo/index.html'
         }
       },
-      browserify: {
-        dist: {
-          files: {
-            'demo/Pages/final/copyrightPage.js': 'demo/Pages/copyrightPage.js',
-            'demo/Pages/final/gamePage.js': 'demo/Pages/gamePage.js',
-            'demo/Pages/final/index.js': 'demo/Pages/index.js',
-            'demo/Pages/final/infoPage.js': 'demo/Pages/infoPage.js',
-            'demo/Pages/final/keyboard.js': 'demo/Pages/keyboard.js',
-            'demo/Pages/final/resultsPage.js': 'demo/Pages/resultsPage.js',
-            'demo/Pages/final/selectionPage.js': 'demo/Pages/selectionPage.js',
-            'demo/Pages/final/settingsPage.js': 'demo/Pages/settingsPage.js',
-            'demo/Pages/final/wordsPage.js': 'demo/Pages/wordsPage.js',
-            'demo/Surroundings/final/Footer.js': 'demo/Surroundings/Footer.js',
-            'demo/Surroundings/final/TopBar.js': 'demo/Surroundings/TopBar.js',
-            'demo/Surroundings/final/TopBarIndex.js': 'demo/Surroundings/TopBarIndex.js',
-          }
+      clean : {
+        tempFiles : {
+          src:["demo/temp", "demo/js/early-phonics-f.js"]
         }
-      },
+      }
     });
   
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -112,12 +102,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-babel');
-    grunt.loadNpmTasks('grunt-browserify');
+    //grunt.loadNpmTasks('grunt-browserify');
     //grunt.loadNpmTasks('grunt-contrib-jshint');
-  
     //grunt.registerTask('test', ['jshint']);
   
-    grunt.registerTask('buildDemo', ['concat', 'uglify', 'cssmin', 'copy', 'processhtml']);
+    grunt.registerTask('buildDemo', ['babel', 'concat:functionality', 'uglify:functions', 'uglify:pages', 'uglify:surroundings', 'cssmin', 'copy', 'processhtml', 'clean:tempFiles']);
   
   };
