@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta content="utf-8">
-<!-- HEAD STARTS HERE
 
+<!--
+Index.html:
+
+Creates a basic placeholder DOM. Loads all the script files which
+render parts of the website onto the basic elements.
+The page is divided into a Header/TOP, Body and Footer.
+
+-->
+
+<!-- HEAD STARTS HERE
+ 
 *include the meta tags
 *the link to css
 
 -->
 
+<html lang="en">
 <head>
+    <meta content="utf-8">
     <meta charset="utf-8">
+    <!-- stylesheets & JS provided by bootstrap for easier implementation of scaling
+        Also, Jquery loaded. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +30,7 @@
             crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/early-phonics.min.css">
-    <title>Early Phonics</title>
+    <title>First Phonics</title>
 
 </head>
 
@@ -26,11 +38,11 @@
 
 <body style="font-family: 'Jotter Primary', sans-serif">
 
-<!-- TOP OPTIONS BAR -->
 <div id="dwWholeApp" class="doorway_application">
     <div id="dwFullScreenDiv" class="doorway_fullscreen_div">
         <div id="dwAspectOuterDiv" class="doorway_aspect_outer_div">
             <div id="dwAspectDiv" class="doorway_aspect_div">
+              <!-- placeholders -->
                 <div id="body"></div>
                 <div id="keyboard_render"></div>
                 <div id="top"></div>
@@ -42,14 +54,14 @@
 
 
 <!-- react imports -->
-<!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
-<script src="js/react.16.7.production.min.js"></script>
-<script src="js/react.dom.16.7.production.min.js"></script>
-<script src="js/early-phonics.min.js"></script>
-	
 
-<!-- react division -->
+<script src="js/React/react.16.7.production.min.js"></script>
+<script src="js/React/react.dom.16.7.production.min.js"></script><!-- Functionality of the game imports -->
+
+<script src="js/early-phonics.min.js"></script>
+
+
+<!-- react rendering pages imports -->
 <script src="js/Surroundings/TopBar.min.js"></script>
 <script src="js/Surroundings/Footer.min.js"></script>
 <script src="js/Pages/settingsPage.min.js"></script>
@@ -61,6 +73,6 @@
 <script src="js/Pages/copyrightPage.min.js"></script>
 <script src="js/Pages/wordsPage.min.js"></script>
 <script src="js/Pages/keyboard.min.js"></script>
-    
+
 </body>
 </html>
